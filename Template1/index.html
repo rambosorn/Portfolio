@@ -307,13 +307,16 @@
       color: var(--ink);
     }
 
-    /* Mobile Drawer */
+    /* ==========================================================================
+       Mobile Drawer (Tactile Button Navigation & Real Icons)
+       ========================================================================== */
     .mobile-drawer {
       position: fixed;
       inset: 0;
       z-index: 200;
-      background: rgba(10, 10, 12, 0.5);
-      backdrop-filter: blur(8px);
+      background: rgba(10, 10, 14, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.3s ease;
@@ -329,15 +332,18 @@
       top: 0;
       right: 0;
       bottom: 0;
-      width: min(320px, 85vw);
-      background: #ffffff;
-      padding: 2rem 1.5rem;
+      width: min(360px, 90vw);
+      background: var(--surface);
+      color: var(--ink);
+      padding: 1.5rem 1.25rem 2.5rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1.15rem;
       transform: translateX(100%);
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+      box-shadow: -12px 0 36px rgba(0, 0, 0, 0.25);
+      overflow-y: auto;
+      border-left: 1px solid var(--glass-border-subtle);
     }
 
     .mobile-drawer.is-open .mobile-drawer-sheet {
@@ -348,6 +354,92 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--glass-border-subtle);
+    }
+
+    .mobile-drawer-profile {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 0.85rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-lg);
+    }
+
+    .mobile-profile-avatar-wrap {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .mobile-profile-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 5%;
+      border: 2.5px solid var(--accent);
+      display: block;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .mobile-status-dot {
+      position: absolute;
+      bottom: 1px;
+      right: 1px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--emerald-accent);
+      border: 2px solid var(--surface);
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
+    }
+
+    .mobile-profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      min-width: 0;
+    }
+
+    .mobile-profile-name {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    .mobile-profile-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mobile-profile-badge {
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 0.2rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.15rem 0.5rem;
+      border-radius: var(--radius-full);
+    }
+
+    .drawer-section-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--subtle);
+      margin-top: 0.15rem;
+      margin-bottom: -0.45rem;
     }
 
     .mobile-drawer-close {
@@ -359,25 +451,254 @@
       align-items: center;
       justify-content: center;
       color: var(--ink);
+      transition: all 0.2s ease;
+    }
+
+    [data-theme="dark"] .mobile-drawer-close {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-drawer-close:hover {
+      background: var(--accent);
+      color: #ffffff;
     }
 
     .mobile-drawer-links {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.55rem;
     }
 
-    .mobile-drawer-link {
-      padding: 0.75rem 1rem;
+    .drawer-nav-card {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 0.95rem;
       border-radius: var(--radius-md);
+      background: var(--bg-alt);
+      border: 1px solid var(--glass-border-subtle);
+      color: var(--ink);
+      text-decoration: none;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .drawer-nav-card:hover,
+    .drawer-nav-card:focus {
+      background: var(--surface);
+      border-color: var(--accent);
+      transform: translateX(4px);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .drawer-nav-icon-box {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .drawer-nav-card:hover .drawer-nav-icon-box {
+      transform: scale(1.08);
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .drawer-nav-meta {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer-nav-label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .drawer-nav-hint {
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.2;
+      margin-top: 0.15rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .drawer-nav-chevron {
+      color: var(--subtle);
+      transition: transform 0.2s ease, color 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .drawer-nav-card:hover .drawer-nav-chevron {
+      transform: translateX(3px);
+      color: var(--accent);
+    }
+
+    .drawer-nav-card.featured-contact {
+      background: linear-gradient(135deg, rgba(177, 95, 44, 0.1) 0%, rgba(217, 119, 6, 0.14) 100%);
+      border: 1px solid rgba(177, 95, 44, 0.35);
+    }
+
+    .drawer-nav-card.featured-contact .drawer-nav-icon-box {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .drawer-badge-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-full);
+      flex-shrink: 0;
+    }
+
+    .mobile-drawer-socials {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--glass-border-subtle);
+    }
+
+    .drawer-social-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.55rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-alt);
+      border: 1px solid var(--glass-border-subtle);
+      font-size: 0.75rem;
       font-weight: 600;
       color: var(--ink-secondary);
-      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      transition: all 0.2s ease;
     }
 
-    .mobile-drawer-link:hover {
-      background: rgba(0, 0, 0, 0.04);
+    .drawer-social-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    /* ==========================================================================
+       Mobile Bottom Navigation Dock ("Button Navigation Bar")
+       ========================================================================== */
+    .mobile-bottom-nav {
+      display: none;
+      position: fixed;
+      bottom: calc(0.85rem + env(safe-area-inset-bottom, 0px));
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 150;
+      width: calc(100% - 1.5rem);
+      max-width: 440px;
+      pointer-events: none;
+      animation: slideUpBottomNav 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes slideUpBottomNav {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 25px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    .mobile-bottom-nav-inner {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.4rem 0.5rem;
+      background: var(--surface-glass);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-full);
+      box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    [data-theme="dark"] .mobile-bottom-nav-inner {
+      background: rgba(22, 24, 34, 0.88);
+      border-color: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 20px 42px -8px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    }
+
+    .bottom-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.18rem;
+      padding: 0.3rem 0.55rem;
+      min-width: 54px;
+      border-radius: var(--radius-md);
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .bottom-nav-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .bottom-nav-item:hover,
+    .bottom-nav-item:focus {
       color: var(--ink);
+    }
+
+    .bottom-nav-item.active {
+      color: var(--accent);
+    }
+
+    .bottom-nav-item.active .bottom-nav-icon-wrap {
+      background: var(--accent-soft);
+      transform: translateY(-2px);
+    }
+
+    .bottom-nav-item.active .bottom-nav-icon-wrap svg {
+      stroke: var(--accent);
+    }
+
+    .bottom-nav-item:active {
+      transform: scale(0.92);
     }
 
     /* ==========================================================================
@@ -394,6 +715,11 @@
       grid-template-columns: 1.15fr 0.95fr;
       gap: clamp(2.5rem, 5vw, 4.5rem);
       align-items: center;
+    }
+
+    .hero-content {
+      grid-column: 1;
+      grid-row: 1;
     }
 
     .hero-badge-row {
@@ -542,6 +868,8 @@
        DYNAMIC MOTION AVATAR COMPONENT (Mouse Overlay & Tech Mode Switch)
        ========================================================================== */
     .avatar-motion-stage {
+      grid-column: 2;
+      grid-row: 1;
       position: relative;
       display: flex;
       justify-content: center;
@@ -2312,8 +2640,23 @@
        ========================================================================== */
     @media (max-width: 1024px) {
       .hero-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 1.75rem;
+      }
+
+      .avatar-motion-stage {
+        order: 1;
+        width: 100%;
+        margin-top: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .hero-content {
+        order: 2;
+        width: 100%;
       }
 
       .hero-lead {
@@ -2322,19 +2665,20 @@
       }
 
       .hero-ctas,
-      .hero-badge-row,
-      .hero-channels-row {
+      .hero-badge-row {
         justify-content: center;
       }
 
-      .avatar-motion-stage {
-        margin-top: 1.5rem;
-      }
-
       .avatar-3d-card {
-        max-width: 380px;
+        max-width: min(340px, 84vw);
         margin-left: auto;
         margin-right: auto;
+        transform: none !important;
+        transform-style: flat !important;
+      }
+
+      .avatar-img-layer {
+        transform: translateX(-50%) !important;
       }
 
       .about-grid,
@@ -2351,12 +2695,41 @@
         display: none;
       }
 
+      /* Hide Get in Touch from mobile menu bar */
+      .nav-cta-btn {
+        display: none !important;
+      }
+
       .nav-hamburger-btn {
         display: flex;
+      }
+
+      /* Hide floating notification pill in mobile view */
+      .scroll-notif-wrapper,
+      #scroll-notif,
+      .notif-pill-inner {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        opacity: 0 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-bottom-nav {
+        display: block;
+      }
+
+      body {
+        padding-bottom: calc(5.2rem + env(safe-area-inset-bottom, 0px));
       }
     }
 
     @media (max-width: 640px) {
+      .avatar-3d-card {
+        max-width: min(320px, 86vw);
+      }
+
       .exp-metrics-bento {
         grid-template-columns: 1fr;
         gap: 0.75rem;
@@ -2399,26 +2772,10 @@
         text-align: center;
       }
 
-      .scroll-notif-wrapper {
-        bottom: 1.25rem;
-        width: max-content;
-        max-width: calc(100vw - 1.5rem);
-      }
-
-      .notif-link.w-inline-block {
-        padding: 0.35rem 0.45rem 0.35rem 1.15rem;
-      }
-
+      .scroll-notif-wrapper,
+      #scroll-notif,
       .notif-pill-inner {
-        gap: 0.85rem;
-      }
-
-      .notif-left-label {
-        font-size: 0.82rem;
-      }
-
-      .notif-cta-text {
-        font-size: 0.74rem;
+        display: none !important;
       }
     }
 
@@ -2796,14 +3153,14 @@
     </nav>
   </div>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Drawer (Button Navigation Menu with Real Icons) -->
   <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
     <div class="mobile-drawer-sheet">
       <div class="mobile-drawer-header">
-        <div class="nav-brand">
+        <a href="#hero" class="nav-brand drawer-nav-item" aria-label="Sorn Rambo Home">
           <span class="nav-brand-spark">&#10022;</span>
           <span>SORN RAMBO</span>
-        </div>
+        </a>
         <div style="display:flex; align-items:center; gap:0.5rem;">
           <button type="button" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Night Mode"
             title="Toggle Night Mode">
@@ -2832,130 +3189,249 @@
           </button>
         </div>
       </div>
-      <div class="mobile-drawer-links">
-        <a href="#experience" class="mobile-drawer-link drawer-nav-item">Experience</a>
-        <a href="#skills" class="mobile-drawer-link drawer-nav-item">Skills &amp; Education</a>
-        <a href="#fieldwork" class="mobile-drawer-link drawer-nav-item">Fieldwork</a>
-        <a href="#certifications" class="mobile-drawer-link drawer-nav-item">Certifications</a>
-        <a href="#contact" class="mobile-drawer-link drawer-nav-item"
-          style="color:var(--accent); font-weight:700;">Get in Touch &rarr;</a>
+
+      <!-- User Mini Profile -->
+      <div class="mobile-drawer-profile">
+        <div class="mobile-profile-avatar-wrap">
+          <img src="./1.png" alt="Sorn Rambo" class="mobile-profile-avatar" />
+          <span class="mobile-status-dot" title="Available for projects & lecturing"></span>
+        </div>
+        <div class="mobile-profile-info">
+          <div class="mobile-profile-name">Sorn Rambo</div>
+          <div class="mobile-profile-role">Senior Business Analyst &amp; Lecturer</div>
+          <div class="mobile-profile-badge">Kampot Cement (2019&ndash;Present)</div>
+        </div>
       </div>
+
+      <div class="drawer-section-title">Navigation Menu</div>
+
+      <!-- Tactile Button Navigation Bar Cards with Real Icons -->
+      <div class="mobile-drawer-links">
+        <!-- 1. Home / Overview -->
+        <a href="#hero" class="drawer-nav-card drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label">Home</div>
+            <div class="drawer-nav-hint">Overview &amp; Tech Avatar</div>
+          </div>
+          <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 2. Enterprise Experience -->
+        <a href="#experience" class="drawer-nav-card drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label">Experience</div>
+            <div class="drawer-nav-hint">Kampot Cement &bull; 4 Enterprise Roles</div>
+          </div>
+          <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 3. Skills & Education -->
+        <a href="#skills" class="drawer-nav-card drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label">Skills &amp; Education</div>
+            <div class="drawer-nav-hint">M.Sc. Data Science &amp; AI &bull; Lecturing</div>
+          </div>
+          <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 4. Fieldwork Evidence -->
+        <a href="#fieldwork" class="drawer-nav-card drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+              <line x1="8" y1="2" x2="8" y2="18" />
+              <line x1="16" y1="6" x2="16" y2="22" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label">Fieldwork Evidence</div>
+            <div class="drawer-nav-hint">Plant Operations &amp; Industrial Sites</div>
+          </div>
+          <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 5. Certifications -->
+        <a href="#certifications" class="drawer-nav-card drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label">Certifications</div>
+            <div class="drawer-nav-hint">SCG, Agile Scrum &amp; Data Science</div>
+          </div>
+          <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+
+        <!-- 6. Featured CTA: Get in Touch -->
+        <a href="#contact" class="drawer-nav-card featured-contact drawer-nav-item">
+          <div class="drawer-nav-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+          </div>
+          <div class="drawer-nav-meta">
+            <div class="drawer-nav-label" style="color:var(--accent);">Get in Touch</div>
+            <div class="drawer-nav-hint">Book a call or project inquiry</div>
+          </div>
+          <span class="drawer-badge-pill">Open &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Quick Social Connection Buttons with Real Icons -->
+      <div class="mobile-drawer-socials">
+        <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
+          class="drawer-social-btn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer"
+          class="drawer-social-btn" title="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
+          </svg>
+          <span>Telegram</span>
+        </a>
+        <a href="mailto:sornrambo@gmail.com" class="drawer-social-btn" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span>Email</span>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- ========================================================================
+  <!-- ========================================================================
        Hero Section with Mouse Overlay Tech Style Avatar
        ======================================================================== -->
-    <section class="hero-section" id="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Enterprise Systems, Data &amp; <span class="hero-title-highlight">Higher Education</span>
-            </h1>
-
-            <p class="hero-lead">
-              Senior Business Analyst at <strong>Kampot Cement Co., Ltd.</strong> (leading AI adoption, CRM value chains
-              &amp; platform digitalization since 2019) and Part-Time Lecturer at <strong>Phnom Penh International
-                University (PPIU)</strong> and <strong>UTE University of Technology and Entrepreneurship</strong>.
-              Master of Science in Data Science and Artificial Intelligence from the <strong>Asian Institute of
-                Technology (AIT)</strong>, Thailand.
-            </p>
-
-            <div class="hero-ctas">
-              <a href="#experience" class="btn-primary">
-                <span>View Experience</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
-                class="btn-glass">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                  <path
-                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
-                </svg>
-                <span>Connect on LinkedIn</span>
-              </a>
-            </div>
-
-            <div class="hero-channels-row">
-              <!-- Telegram -->
-              <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-chip"
-                title="Telegram @rambosorn" aria-label="Telegram">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
-                </svg>
-              </a>
-              <!-- Email -->
-              <a href="mailto:sornrambo@gmail.com" class="channel-chip" title="Email sornrambo@gmail.com"
-                aria-label="Email">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- ================================================================
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- ================================================================
              DYNAMIC MOTION AVATAR COMPONENT (Hover overlay switches to Tech Style)
              ================================================================ -->
-          <div class="avatar-motion-stage">
-            <!-- Ambient Dynamic Radial Halo Glow -->
-            <div class="avatar-ambient-glow" aria-hidden="true"></div>
+        <div class="avatar-motion-stage">
+          <!-- Ambient Dynamic Radial Halo Glow -->
+          <div class="avatar-ambient-glow" aria-hidden="true"></div>
 
-            <!-- 3D Parallax Card -->
-            <div class="avatar-3d-card" id="avatarCard" title="Hover to reveal AI Tech Mode">
-              <!-- Cybernetic HUD Corner Brackets -->
-              <div class="avatar-hud-bracket top-left" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket top-right" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket bottom-left" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket bottom-right" aria-hidden="true"></div>
+          <!-- 3D Parallax Card -->
+          <div class="avatar-3d-card" id="avatarCard" title="Hover to reveal AI Tech Mode">
+            <!-- Cybernetic HUD Corner Brackets -->
+            <div class="avatar-hud-bracket top-left" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket top-right" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket bottom-left" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket bottom-right" aria-hidden="true"></div>
 
-              <!-- Holographic Glare Overlay -->
-              <div class="avatar-glare-overlay" id="avatarGlare"></div>
+            <!-- Holographic Glare Overlay -->
+            <div class="avatar-glare-overlay" id="avatarGlare"></div>
 
-              <!-- Animated Laser Scan Beam on Hover -->
-              <div class="avatar-scan-line"></div>
+            <!-- Animated Laser Scan Beam on Hover -->
+            <div class="avatar-scan-line"></div>
 
-              <!-- Top Interactive Mode Toggle Bar -->
-              <div class="avatar-mode-bar">
-                <div class="mode-pill-toggle">
-                  <button type="button" class="mode-option-btn active" id="modeExecutiveBtn" title="Executive Portrait">
-                    <span>Executive</span>
-                  </button>
-                  <button type="button" class="mode-option-btn" id="modeAugmentedBtn" title="AI Tech Mode">
-                    <span>AI Tech</span>
-                  </button>
-                </div>
-
-                <div class="mode-badge-live">
-                  <span class="pill-dot" style="background:#10b981;"></span>
-                  <span id="modeBadgeLiveText">Hover for Tech</span>
-                </div>
+            <!-- Top Interactive Mode Toggle Bar -->
+            <div class="avatar-mode-bar">
+              <div class="mode-pill-toggle">
+                <button type="button" class="mode-option-btn active" id="modeExecutiveBtn" title="Executive Portrait">
+                  <span>Executive</span>
+                </button>
+                <button type="button" class="mode-option-btn" id="modeAugmentedBtn" title="AI Tech Mode">
+                  <span>AI Tech</span>
+                </button>
               </div>
 
-              <!-- Base Executive Portrait (1.png) -->
-              <img src="./1.png" alt="Sorn Rambo — Executive Portrait" class="avatar-img-layer base"
-                id="avatarBaseImg" />
-
-              <!-- Augmented Tech Layer (2.png) with Glowing HUD Overlays -->
-              <img src="./2.png" alt="Sorn Rambo — Augmented AI Tech Portrait" class="avatar-img-layer augmented"
-                id="avatarAugmentedImg" />
-
-              <!-- Bottom Floating Kinetic Summary Pill -->
-              <div class="avatar-orbit-chip bottom-card">
-                <div>
-                  <div class="orbit-chip-main">Sorn Rambo</div>
-                  <div class="orbit-chip-sub" id="orbitChipSub">Kampot Cement Co., Ltd.</div>
-                </div>
-                <div class="orbit-chip-tag" id="orbitChipTag">2019&ndash;Present</div>
+              <div class="mode-badge-live">
+                <span class="pill-dot" style="background:#10b981;"></span>
+                <span id="modeBadgeLiveText">Hover for Tech</span>
               </div>
+            </div>
+
+            <!-- Base Executive Portrait (1.png) -->
+            <img src="./1.png" alt="Sorn Rambo — Executive Portrait" class="avatar-img-layer base"
+              id="avatarBaseImg" />
+
+            <!-- Augmented Tech Layer (2.png) with Glowing HUD Overlays -->
+            <img src="./2.png" alt="Sorn Rambo — Augmented AI Tech Portrait" class="avatar-img-layer augmented"
+              id="avatarAugmentedImg" />
+
+            <!-- Bottom Floating Kinetic Summary Pill -->
+            <div class="avatar-orbit-chip bottom-card">
+              <div>
+                <div class="orbit-chip-main">Sorn Rambo</div>
+                <div class="orbit-chip-sub" id="orbitChipSub">Kampot Cement Co., Ltd.</div>
+              </div>
+              <div class="orbit-chip-tag" id="orbitChipTag">2019&ndash;Present</div>
             </div>
           </div>
         </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Enterprise Systems, Data &amp; <span class="hero-title-highlight">Higher Education</span>
+          </h1>
+
+          <p class="hero-lead">
+            Senior Business Analyst at <strong>Kampot Cement Co., Ltd.</strong> (leading AI adoption, CRM value chains
+            &amp; platform digitalization since 2019) and Part-Time Lecturer at <strong>Phnom Penh International
+              University (PPIU)</strong> and <strong>UTE University of Technology and Entrepreneurship</strong>.
+            Master of Science in Data Science and Artificial Intelligence from the <strong>Asian Institute of
+              Technology (AIT)</strong>, Thailand.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#experience" class="btn-primary">
+              <span>View Experience</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
+              class="btn-glass">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -3893,6 +4369,66 @@
     </div>
 
     <!-- ========================================================================
+         MOBILE FLOATING BOTTOM NAVIGATION DOCK ("Button Navigation Bar")
+         ======================================================================== -->
+    <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobile Navigation Dock">
+      <div class="mobile-bottom-nav-inner">
+        <a href="#hero" class="bottom-nav-item active" data-section="hero" aria-label="Home">
+          <div class="bottom-nav-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <span class="bottom-nav-label">Home</span>
+        </a>
+
+        <a href="#experience" class="bottom-nav-item" data-section="experience" aria-label="Experience">
+          <div class="bottom-nav-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </div>
+          <span class="bottom-nav-label">Experience</span>
+        </a>
+
+        <a href="#skills" class="bottom-nav-item" data-section="skills" aria-label="Skills & Education">
+          <div class="bottom-nav-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <span class="bottom-nav-label">Skills</span>
+        </a>
+
+        <a href="#certifications" class="bottom-nav-item" data-section="certifications" aria-label="Certifications">
+          <div class="bottom-nav-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+          </div>
+          <span class="bottom-nav-label">Certs</span>
+        </a>
+
+        <button type="button" class="bottom-nav-item bottom-nav-menu-btn" id="bottomNavMenuBtn" aria-label="Open Navigation Menu">
+          <div class="bottom-nav-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+          </div>
+          <span class="bottom-nav-label">Menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========================================================================
        High-Res Lightbox Modal
        ======================================================================== -->
     <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
@@ -3944,16 +4480,17 @@
       updateClock();
       setInterval(updateClock, 1000);
 
-      // 2. Mobile Drawer Controls
+      // 2. Mobile Drawer Controls & Bottom Navigation Dock
       const drawer = document.getElementById('mobile-drawer');
       const drawerOpenBtn = document.getElementById('drawer-open-btn');
       const drawerCloseBtn = document.getElementById('drawer-close-btn');
+      const bottomNavMenuBtn = document.getElementById('bottomNavMenuBtn');
 
-      if (drawerOpenBtn) {
-        drawerOpenBtn.addEventListener('click', () => {
+      function openDrawer() {
+        if (drawer) {
           drawer.classList.add('is-open');
           drawer.setAttribute('aria-hidden', 'false');
-        });
+        }
       }
 
       function closeDrawer() {
@@ -3963,6 +4500,8 @@
         }
       }
 
+      if (drawerOpenBtn) drawerOpenBtn.addEventListener('click', openDrawer);
+      if (bottomNavMenuBtn) bottomNavMenuBtn.addEventListener('click', openDrawer);
       if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
       if (drawer) {
         drawer.addEventListener('click', (e) => {
@@ -3973,6 +4512,33 @@
       document.querySelectorAll('.drawer-nav-item').forEach(item => {
         item.addEventListener('click', closeDrawer);
       });
+
+      // Mobile Bottom Navigation Scroll Spy (Active Item Highlight)
+      const bottomNavItems = document.querySelectorAll('.bottom-nav-item[data-section]');
+      const trackedSections = ['hero', 'experience', 'skills', 'certifications'];
+
+      function updateBottomNavActive() {
+        const scrollPos = window.scrollY + 180;
+        let currentSection = 'hero';
+
+        trackedSections.forEach(id => {
+          const sec = document.getElementById(id);
+          if (sec && sec.offsetTop <= scrollPos) {
+            currentSection = id;
+          }
+        });
+
+        bottomNavItems.forEach(item => {
+          if (item.getAttribute('data-section') === currentSection) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateBottomNavActive, { passive: true });
+      updateBottomNavActive();
 
       // 3. Dynamic Motion Avatar: Mouse Overlay Tech Style, 3D Tilt, Glare & Mode Switch
       const avatarCard = document.getElementById('avatarCard');
