@@ -1848,9 +1848,17 @@
     }
 
     @keyframes pulseGreen {
-      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
     }
 
     .contact-title {
@@ -1915,8 +1923,8 @@
       flex-direction: column;
       position: relative;
       transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                  box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.28s ease;
+        box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.28s ease;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
@@ -2837,1395 +2845,1421 @@
         <a href="#skills" class="mobile-drawer-link drawer-nav-item">Skills &amp; Education</a>
         <a href="#fieldwork" class="mobile-drawer-link drawer-nav-item">Fieldwork</a>
         <a href="#certifications" class="mobile-drawer-link drawer-nav-item">Certifications</a>
-        <a href="#contact" class="mobile-drawer-link drawer-nav-item"
-          style="color:var(--accent); font-weight:700;">Get in Touch &rarr;</a>
-      </div>
+        <a href="#contact" class="mobile-drawer-link drawer-nav-item" style="color:var(--accent); font-weight:700;">Get
+          in Touch &rarr;</a>
       </div>
     </div>
+  </div>
 
-    <!-- ========================================================================
+  <!-- ========================================================================
        Hero Section with Mouse Overlay Tech Style Avatar
        ======================================================================== -->
-    <section class="hero-section" id="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              Enterprise Systems, Data &amp; <span class="hero-title-highlight">Higher Education</span>
-            </h1>
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Enterprise Systems, Data &amp; <span class="hero-title-highlight">Higher Education</span>
+          </h1>
 
-            <p class="hero-lead">
-              Senior Business Analyst at <strong>Kampot Cement Co., Ltd.</strong> (leading AI adoption, CRM value chains
-              &amp; platform digitalization since 2019) and Part-Time Lecturer at <strong>Phnom Penh International
-                University (PPIU)</strong> and <strong>UTE University of Technology and Entrepreneurship</strong>.
-              Master of Science in Data Science and Artificial Intelligence from the <strong>Asian Institute of
-                Technology (AIT)</strong>, Thailand.
-            </p>
+          <p class="hero-lead">
+            Senior Business Analyst at <strong>Kampot Cement Co., Ltd.</strong> (leading AI adoption, CRM value chains
+            &amp; platform digitalization since 2019) and Part-Time Lecturer at <strong>Phnom Penh International
+              University (PPIU)</strong> and <strong>UTE University of Technology and Entrepreneurship</strong>.
+            Master of Science in Data Science and Artificial Intelligence from the <strong>Asian Institute of
+              Technology (AIT)</strong>, Thailand.
+          </p>
 
-            <div class="hero-ctas">
-              <a href="#experience" class="btn-primary">
-                <span>View Experience</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
-                class="btn-glass">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                  <path
-                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
-                </svg>
-                <span>Connect on LinkedIn</span>
-              </a>
-            </div>
-
-            <div class="hero-channels-row">
-              <!-- Telegram -->
-              <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-chip"
-                title="Telegram @rambosorn" aria-label="Telegram">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
-                </svg>
-              </a>
-              <!-- Email -->
-              <a href="mailto:sornrambo@gmail.com" class="channel-chip" title="Email sornrambo@gmail.com"
-                aria-label="Email">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </a>
-            </div>
+          <div class="hero-ctas">
+            <a href="#experience" class="btn-primary">
+              <span>View Experience</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
+              class="btn-glass">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
           </div>
 
-          <!-- ================================================================
+          <div class="hero-channels-row">
+            <!-- Telegram -->
+            <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-chip"
+              title="Telegram @rambosorn" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:sornrambo@gmail.com" class="channel-chip" title="Email sornrambo@gmail.com"
+              aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================================================================
              DYNAMIC MOTION AVATAR COMPONENT (Hover overlay switches to Tech Style)
              ================================================================ -->
-          <div class="avatar-motion-stage">
-            <!-- Ambient Dynamic Radial Halo Glow -->
-            <div class="avatar-ambient-glow" aria-hidden="true"></div>
+        <div class="avatar-motion-stage">
+          <!-- Ambient Dynamic Radial Halo Glow -->
+          <div class="avatar-ambient-glow" aria-hidden="true"></div>
 
-            <!-- 3D Parallax Card -->
-            <div class="avatar-3d-card" id="avatarCard" title="Hover to reveal AI Tech Mode">
-              <!-- Cybernetic HUD Corner Brackets -->
-              <div class="avatar-hud-bracket top-left" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket top-right" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket bottom-left" aria-hidden="true"></div>
-              <div class="avatar-hud-bracket bottom-right" aria-hidden="true"></div>
+          <!-- 3D Parallax Card -->
+          <div class="avatar-3d-card" id="avatarCard" title="Hover to reveal AI Tech Mode">
+            <!-- Cybernetic HUD Corner Brackets -->
+            <div class="avatar-hud-bracket top-left" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket top-right" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket bottom-left" aria-hidden="true"></div>
+            <div class="avatar-hud-bracket bottom-right" aria-hidden="true"></div>
 
-              <!-- Holographic Glare Overlay -->
-              <div class="avatar-glare-overlay" id="avatarGlare"></div>
+            <!-- Holographic Glare Overlay -->
+            <div class="avatar-glare-overlay" id="avatarGlare"></div>
 
-              <!-- Animated Laser Scan Beam on Hover -->
-              <div class="avatar-scan-line"></div>
+            <!-- Animated Laser Scan Beam on Hover -->
+            <div class="avatar-scan-line"></div>
 
-              <!-- Top Interactive Mode Toggle Bar -->
-              <div class="avatar-mode-bar">
-                <div class="mode-pill-toggle">
-                  <button type="button" class="mode-option-btn active" id="modeExecutiveBtn" title="Executive Portrait">
-                    <span>Executive</span>
-                  </button>
-                  <button type="button" class="mode-option-btn" id="modeAugmentedBtn" title="AI Tech Mode">
-                    <span>AI Tech</span>
-                  </button>
-                </div>
-
-                <div class="mode-badge-live">
-                  <span class="pill-dot" style="background:#10b981;"></span>
-                  <span id="modeBadgeLiveText">Hover for Tech</span>
-                </div>
+            <!-- Top Interactive Mode Toggle Bar -->
+            <div class="avatar-mode-bar">
+              <div class="mode-pill-toggle">
+                <button type="button" class="mode-option-btn active" id="modeExecutiveBtn" title="Executive Portrait">
+                  <span>Executive</span>
+                </button>
+                <button type="button" class="mode-option-btn" id="modeAugmentedBtn" title="AI Tech Mode">
+                  <span>AI Tech</span>
+                </button>
               </div>
 
-              <!-- Base Executive Portrait (1.png) -->
-              <img src="./1.png" alt="Sorn Rambo — Executive Portrait" class="avatar-img-layer base"
-                id="avatarBaseImg" />
-
-              <!-- Augmented Tech Layer (2.png) with Glowing HUD Overlays -->
-              <img src="./2.png" alt="Sorn Rambo — Augmented AI Tech Portrait" class="avatar-img-layer augmented"
-                id="avatarAugmentedImg" />
-
-              <!-- Bottom Floating Kinetic Summary Pill -->
-              <div class="avatar-orbit-chip bottom-card">
-                <div>
-                  <div class="orbit-chip-main">Sorn Rambo</div>
-                  <div class="orbit-chip-sub" id="orbitChipSub">Kampot Cement Co., Ltd.</div>
-                </div>
-                <div class="orbit-chip-tag" id="orbitChipTag">2019&ndash;Present</div>
+              <div class="mode-badge-live">
+                <span class="pill-dot" style="background:#10b981;"></span>
+                <span id="modeBadgeLiveText">Hover for Tech</span>
               </div>
+            </div>
+
+            <!-- Base Executive Portrait (1.png) -->
+            <img src="./1.png" alt="Sorn Rambo — Executive Portrait" class="avatar-img-layer base" id="avatarBaseImg" />
+
+            <!-- Augmented Tech Layer (2.png) with Glowing HUD Overlays -->
+            <img src="./2.png" alt="Sorn Rambo — Augmented AI Tech Portrait" class="avatar-img-layer augmented"
+              id="avatarAugmentedImg" />
+
+            <!-- Bottom Floating Kinetic Summary Pill -->
+            <div class="avatar-orbit-chip bottom-card">
+              <div>
+                <div class="orbit-chip-main">Sorn Rambo</div>
+                <div class="orbit-chip-sub" id="orbitChipSub">Kampot Cement Co., Ltd.</div>
+              </div>
+              <div class="orbit-chip-tag" id="orbitChipTag">2019&ndash;Present</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========================================================================
+  <!-- ========================================================================
        Experience Section (Kampot Cement Co., Ltd. 2019–Present)
        ======================================================================== -->
-    <section id="experience" style="background:var(--bg-alt);">
-      <div class="container">
-        <!-- Modern Executive Career Header & Metrics Bento Hub -->
-        <div class="exp-header-bento">
-          <div class="exp-header-left">
-            <div class="exp-eyebrow-pill">
-              <span class="exp-pulse-dot"></span>
-              <span>Career Trajectory</span>
+  <section id="experience" style="background:var(--bg-alt);">
+    <div class="container">
+      <!-- Modern Executive Career Header & Metrics Bento Hub -->
+      <div class="exp-header-bento">
+        <div class="exp-header-left">
+          <div class="exp-eyebrow-pill">
+            <span class="exp-pulse-dot"></span>
+            <span>Career Trajectory</span>
+          </div>
+          <h2 class="exp-title-headline">
+            Professional <span class="exp-title-accent">Experience</span>
+          </h2>
+          <p class="exp-narrative-text">
+            Spearheading enterprise AI adoption, CRM value chains, and platform digitalization at Kampot Cement Co.,
+            Ltd. since 2019, complemented by academic lecturing in Business Intelligence &amp; Data Systems.
+          </p>
+          <div class="exp-tags-row">
+            <div class="exp-tag-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
+              </svg>
+              <span>Kampot Cement (2019&ndash;Present)</span>
             </div>
-            <h2 class="exp-title-headline">
-              Professional <span class="exp-title-accent">Experience</span>
-            </h2>
-            <p class="exp-narrative-text">
-              Spearheading enterprise AI adoption, CRM value chains, and platform digitalization at Kampot Cement Co., Ltd. since 2019, complemented by academic lecturing in Business Intelligence &amp; Data Systems.
-            </p>
-            <div class="exp-tags-row">
-              <div class="exp-tag-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
+            <div class="exp-tag-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              <span>Lecturer @ PPIU &amp; UTE</span>
+            </div>
+            <div class="exp-tag-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20" />
+              </svg>
+              <span>Phnom Penh, Cambodia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3-Tile Interactive Bento Stats Showcase -->
+        <div class="exp-metrics-bento">
+          <!-- Tile 1: Total Experience -->
+          <div class="bento-stat-card">
+            <div class="bento-stat-top">
+              <div class="bento-stat-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                 </svg>
-                <span>Kampot Cement (2019&ndash;Present)</span>
               </div>
-              <div class="exp-tag-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+            </div>
+            <div class="bento-stat-val-group">
+              <span class="bento-stat-big">7</span><span class="bento-stat-suffix">+</span>
+              <span class="bento-stat-unit">Years</span>
+            </div>
+            <div class="bento-stat-meta">
+              <div class="bento-stat-label">Industry Experience</div>
+              <div class="bento-stat-sub">Digital Transformation &amp; Analytics</div>
+            </div>
+          </div>
+
+          <!-- Tile 2: Higher Education & Teaching Experience -->
+          <div class="bento-stat-card">
+            <div class="bento-stat-top">
+              <div class="bento-stat-icon-wrap"
+                style="background:rgba(16,185,129,0.12); color:#10b981; border-color:rgba(16,185,129,0.25);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 1-4 4v14a3 3 0 0 0 3-3h7z" />
+                </svg>
+              </div>
+            </div>
+            <div class="bento-stat-val-group">
+              <span class="bento-stat-big">2</span><span class="bento-stat-suffix">+</span>
+              <span class="bento-stat-unit">Years</span>
+            </div>
+            <div class="bento-stat-meta">
+              <div class="bento-stat-label">Teaching Experience</div>
+              <div class="bento-stat-sub">Higher Education &bull; PPIU &amp; UTE</div>
+            </div>
+          </div>
+
+          <!-- Tile 3: Advanced Degree -->
+          <div class="bento-stat-card">
+            <div class="bento-stat-top">
+              <div class="bento-stat-icon-wrap"
+                style="background:rgba(56,189,248,0.12); color:#38bdf8; border-color:rgba(56,189,248,0.25);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
                   <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
                   <path d="M6 12v5c3 3 9 3 12 0v-5" />
                 </svg>
-                <span>Lecturer @ PPIU &amp; UTE</span>
-              </div>
-              <div class="exp-tag-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20" />
-                </svg>
-                <span>Phnom Penh, Cambodia</span>
               </div>
             </div>
-          </div>
-
-          <!-- Right: 3-Tile Interactive Bento Stats Showcase -->
-          <div class="exp-metrics-bento">
-            <!-- Tile 1: Total Experience -->
-            <div class="bento-stat-card">
-              <div class="bento-stat-top">
-                <div class="bento-stat-icon-wrap">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                  </svg>
-                </div>
-              </div>
-              <div class="bento-stat-val-group">
-                <span class="bento-stat-big">7</span><span class="bento-stat-suffix">+</span>
-                <span class="bento-stat-unit">Years</span>
-              </div>
-              <div class="bento-stat-meta">
-                <div class="bento-stat-label">Industry Experience</div>
-                <div class="bento-stat-sub">Digital Transformation &amp; Analytics</div>
-              </div>
+            <div class="bento-stat-val-group">
+              <span class="bento-stat-big" style="font-size:1.75rem;">M.Sc.</span>
+              <span class="bento-stat-unit">AIT</span>
             </div>
-
-            <!-- Tile 2: Higher Education & Teaching Experience -->
-            <div class="bento-stat-card">
-              <div class="bento-stat-top">
-                <div class="bento-stat-icon-wrap" style="background:rgba(16,185,129,0.12); color:#10b981; border-color:rgba(16,185,129,0.25);">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                    <path d="M22 3h-6a4 4 0 0 1-4 4v14a3 3 0 0 0 3-3h7z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="bento-stat-val-group">
-                <span class="bento-stat-big">2</span><span class="bento-stat-suffix">+</span>
-                <span class="bento-stat-unit">Years</span>
-              </div>
-              <div class="bento-stat-meta">
-                <div class="bento-stat-label">Teaching Experience</div>
-                <div class="bento-stat-sub">Higher Education &bull; PPIU &amp; UTE</div>
-              </div>
-            </div>
-
-            <!-- Tile 3: Advanced Degree -->
-            <div class="bento-stat-card">
-              <div class="bento-stat-top">
-                <div class="bento-stat-icon-wrap" style="background:rgba(56,189,248,0.12); color:#38bdf8; border-color:rgba(56,189,248,0.25);">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                  </svg>
-                </div>
-              </div>
-              <div class="bento-stat-val-group">
-                <span class="bento-stat-big" style="font-size:1.75rem;">M.Sc.</span>
-                <span class="bento-stat-unit">AIT</span>
-              </div>
-              <div class="bento-stat-meta">
-                <div class="bento-stat-label">Data Science &amp; AI</div>
-                <div class="bento-stat-sub">Asian Institute of Technology</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Kampot Cement Tenure Companion Ribbon -->
-        <div class="company-tenure-banner">
-          <div style="display:flex; align-items:center; gap:0.85rem;">
-            <div class="tenure-badge-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
-              </svg>
-            </div>
-            <div>
-              <div class="tenure-banner-text">
-                <strong>Kampot Cement Co., Ltd.</strong> &mdash; Continuous Enterprise Tenure (2019 &ndash; Present)
-              </div>
-              <div style="font-size:0.82rem; color:var(--muted); margin-top:0.15rem;">
-                Phnom Penh, Cambodia &bull; 6+ Years Continuous Enterprise Core across Evolving Strategic Roles
-              </div>
-            </div>
-          </div>
-          <div class="tenure-banner-badge">
-            <span class="pulse-dot" style="background:#10b981; width:7px; height:7px; border-radius:50%; display:inline-block; box-shadow:0 0 8px #10b981;"></span>
-            <span>Enterprise Core</span>
-          </div>
-        </div>
-
-        <div class="timeline-container">
-          <!-- Role 1: Senior Business Analyst (Kampot Cement) -->
-          <div class="timeline-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role-title">Senior Business Analyst</h3>
-              <span class="timeline-period-badge current">Present</span>
-            </div>
-            <div class="timeline-org">
-              <span>Kampot Cement Co., Ltd.</span>
-              <span>&bull;</span>
-              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Led AI training sessions to improve adoption, developed materials, and delivered hands-on workshops
-                and tool demos following best practices.</li>
-              <li>Optimized the CRM value chain by enhancing customer management processes and integrating e-ordering
-                systems, improving operational efficiency.</li>
-              <li>Led Scrum and Agile workflows for the data management and digitalization team, streamlining processes
-                and enhancing collaboration.</li>
-            </ul>
-          </div>
-
-          <!-- Role 2: Part-Time Lecturer (PPIU & UTE) -->
-          <div class="timeline-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role-title">Part-Time Lecturer</h3>
-              <span class="timeline-period-badge current">Present</span>
-            </div>
-            <div class="timeline-org">
-              <span>Phnom Penh International University (PPIU) &amp; UTE University of Technology and
-                Entrepreneurship</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Deliver courses in Business Intelligence, Digital Business, Data Management, Information Management
-                and IT related, integrating industry best practices and real-world applications into academic learning.
-              </li>
-              <li>Design course syllabi, assessments, and learning activities aligned with university academic standards
-                and learning outcomes.</li>
-            </ul>
-          </div>
-
-          <!-- Role 3: O2O Platform Development (Kampot Cement) -->
-          <div class="timeline-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role-title">O2O Platform Development</h3>
-              <span class="timeline-period-badge">2021 &ndash; 2023</span>
-            </div>
-            <div class="timeline-org">
-              <span>Kampot Cement Co., Ltd.</span>
-              <span>&bull;</span>
-              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Acquired and onboarded offline partners, logistics providers, and service partners to enhance
-                offerings.</li>
-              <li>Oversaw the ecommerce website, ensuring accurate content, product listings, and pricing. Coordinated
-                brand, marketing, and e-commerce activities to drive engagement and sales.</li>
-              <li>Monitored business outcomes and performance through data-driven analysis.</li>
-            </ul>
-          </div>
-
-          <!-- Role 4: Digital Marketing Specialist (Kampot Cement) -->
-          <div class="timeline-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role-title">Digital Marketing Specialist</h3>
-              <span class="timeline-period-badge">2019 &ndash; 2021</span>
-            </div>
-            <div class="timeline-org">
-              <span>Kampot Cement Co., Ltd.</span>
-              <span>&bull;</span>
-              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Led digital marketing efforts across platforms, ensuring cohesive execution while aligning strategies
-                with business objectives through executive collaboration.</li>
-              <li>Built an in-house team, reducing agency dependence and costs.</li>
-              <li>Developed strategies for social media, website management, and SEO/SEM.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Earlier Career Foundation -->
-        <div class="earlier-career-strip">
-          <div class="earlier-career-title">&#10022; Prior Technical &amp; Teaching Foundation</div>
-          <div class="earlier-career-list">
-            <div class="earlier-career-item">
-              <strong>IT Supervisor</strong> &bull; True Visions International School (2017&ndash;2018)<br>
-              <span style="color:var(--muted); font-size:0.8rem;">Managed school websites, systems, networks,
-                hardware/software and computer teaching.</span>
-            </div>
-            <div class="earlier-career-item">
-              <strong>English Teacher (Part-Time)</strong> &bull; Beltei International School Campus 5 (2018)
-            </div>
-            <div class="earlier-career-item">
-              <strong>Computer Teacher</strong> &bull; Learning International School (2016&ndash;2017)
+            <div class="bento-stat-meta">
+              <div class="bento-stat-label">Data Science &amp; AI</div>
+              <div class="bento-stat-sub">Asian Institute of Technology</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ========================================================================
+      <!-- Kampot Cement Tenure Companion Ribbon -->
+      <div class="company-tenure-banner">
+        <div style="display:flex; align-items:center; gap:0.85rem;">
+          <div class="tenure-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
+            </svg>
+          </div>
+          <div>
+            <div class="tenure-banner-text">
+              <strong>Kampot Cement Co., Ltd.</strong> &mdash; Continuous Enterprise Tenure (2019 &ndash; Present)
+            </div>
+            <div style="font-size:0.82rem; color:var(--muted); margin-top:0.15rem;">
+              Phnom Penh, Cambodia &bull; 6+ Years Continuous Enterprise Core across Evolving Strategic Roles
+            </div>
+          </div>
+        </div>
+        <div class="tenure-banner-badge">
+          <span class="pulse-dot"
+            style="background:#10b981; width:7px; height:7px; border-radius:50%; display:inline-block; box-shadow:0 0 8px #10b981;"></span>
+          <span>Enterprise Core</span>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Role 1: Senior Business Analyst (Kampot Cement) -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <h3 class="timeline-role-title">Senior Business Analyst</h3>
+            <span class="timeline-period-badge current">Present</span>
+          </div>
+          <div class="timeline-org">
+            <span>Kampot Cement Co., Ltd.</span>
+            <span>&bull;</span>
+            <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Led AI training sessions to improve adoption, developed materials, and delivered hands-on workshops
+              and tool demos following best practices.</li>
+            <li>Optimized the CRM value chain by enhancing customer management processes and integrating e-ordering
+              systems, improving operational efficiency.</li>
+            <li>Led Scrum and Agile workflows for the data management and digitalization team, streamlining processes
+              and enhancing collaboration.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2: Part-Time Lecturer (PPIU & UTE) -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <h3 class="timeline-role-title">Part-Time Lecturer</h3>
+            <span class="timeline-period-badge current">Present</span>
+          </div>
+          <div class="timeline-org">
+            <span>Phnom Penh International University (PPIU) &amp; UTE University of Technology and
+              Entrepreneurship</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Deliver courses in Business Intelligence, Digital Business, Data Management, Information Management
+              and IT related, integrating industry best practices and real-world applications into academic learning.
+            </li>
+            <li>Design course syllabi, assessments, and learning activities aligned with university academic standards
+              and learning outcomes.</li>
+          </ul>
+        </div>
+
+        <!-- Role 3: O2O Platform Development (Kampot Cement) -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <h3 class="timeline-role-title">O2O Platform Development</h3>
+            <span class="timeline-period-badge">2021 &ndash; 2023</span>
+          </div>
+          <div class="timeline-org">
+            <span>Kampot Cement Co., Ltd.</span>
+            <span>&bull;</span>
+            <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Acquired and onboarded offline partners, logistics providers, and service partners to enhance
+              offerings.</li>
+            <li>Oversaw the ecommerce website, ensuring accurate content, product listings, and pricing. Coordinated
+              brand, marketing, and e-commerce activities to drive engagement and sales.</li>
+            <li>Monitored business outcomes and performance through data-driven analysis.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4: Digital Marketing Specialist (Kampot Cement) -->
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <h3 class="timeline-role-title">Digital Marketing Specialist</h3>
+            <span class="timeline-period-badge">2019 &ndash; 2021</span>
+          </div>
+          <div class="timeline-org">
+            <span>Kampot Cement Co., Ltd.</span>
+            <span>&bull;</span>
+            <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Led digital marketing efforts across platforms, ensuring cohesive execution while aligning strategies
+              with business objectives through executive collaboration.</li>
+            <li>Built an in-house team, reducing agency dependence and costs.</li>
+            <li>Developed strategies for social media, website management, and SEO/SEM.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Earlier Career Foundation -->
+      <div class="earlier-career-strip">
+        <div class="earlier-career-title">&#10022; Prior Technical &amp; Teaching Foundation</div>
+        <div class="earlier-career-list">
+          <div class="earlier-career-item">
+            <strong>IT Supervisor</strong> &bull; True Visions International School (2017&ndash;2018)<br>
+            <span style="color:var(--muted); font-size:0.8rem;">Managed school websites, systems, networks,
+              hardware/software and computer teaching.</span>
+          </div>
+          <div class="earlier-career-item">
+            <strong>English Teacher (Part-Time)</strong> &bull; Beltei International School Campus 5 (2018)
+          </div>
+          <div class="earlier-career-item">
+            <strong>Computer Teacher</strong> &bull; Learning International School (2016&ndash;2017)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        Skills & Education Section
        ======================================================================== -->
-    <section id="skills">
-      <div class="container">
-        <div class="section-eyebrow">&#10022; Technical Proficiencies &amp; Academic Degrees</div>
-        <h2 class="section-title">Skills &amp; Education</h2>
-        <p class="section-desc">
-          Specialized capabilities across modern data stacks, agile management, and formal university degrees.
-        </p>
+  <section id="skills">
+    <div class="container">
+      <div class="section-eyebrow">&#10022; Technical Proficiencies &amp; Academic Degrees</div>
+      <h2 class="section-title">Skills &amp; Education</h2>
+      <p class="section-desc">
+        Specialized capabilities across modern data stacks, agile management, and formal university degrees.
+      </p>
 
-        <div class="skills-edu-grid">
-          <!-- Technical Skill Sets -->
-          <div class="skills-group-container">
-            <div class="skill-category-card">
-              <div class="skill-cat-title">
-                <span>Data &amp; Analytics</span>
-              </div>
-              <div class="skill-tag-cloud">
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Tableau</span>
-                <span class="skill-tag">Microsoft Excel (Advanced)</span>
-                <span class="skill-tag">Data Management</span>
-                <span class="skill-tag">Business Intelligence</span>
-                <span class="skill-tag">Generative AI Tools &amp; Copilot</span>
-              </div>
+      <div class="skills-edu-grid">
+        <!-- Technical Skill Sets -->
+        <div class="skills-group-container">
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <span>Data &amp; Analytics</span>
             </div>
-
-            <div class="skill-category-card">
-              <div class="skill-cat-title">
-                <span>Programming &amp; Development</span>
-              </div>
-              <div class="skill-tag-cloud">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Git / GitHub</span>
-                <span class="skill-tag">Terminal / Shell</span>
-              </div>
-            </div>
-
-            <div class="skill-category-card">
-              <div class="skill-cat-title">
-                <span>Cloud &amp; Project Management</span>
-              </div>
-              <div class="skill-tag-cloud">
-                <span class="skill-tag">Scrum / Agile Workflows</span>
-                <span class="skill-tag">Jira</span>
-                <span class="skill-tag">Microsoft 365</span>
-                <span class="skill-tag">CRM Systems &amp; e-Ordering</span>
-                <span class="skill-tag">E-Commerce Management</span>
-              </div>
-            </div>
-
-            <div class="skill-category-card">
-              <div class="skill-cat-title">
-                <span>Design &amp; UI/UX</span>
-              </div>
-              <div class="skill-tag-cloud">
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Adobe Illustrator</span>
-                <span class="skill-tag">Adobe Photoshop</span>
-                <span class="skill-tag">Digital Branding</span>
-              </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Google Analytics </span>
+              <span class="skill-tag">Microsoft Excel (Advanced)</span>
+              <span class="skill-tag">Generative AI Tools </span>
             </div>
           </div>
 
-          <!-- Formal Education Degrees -->
-          <div class="edu-card-list">
-            <!-- 2024: M.Sc. Data Science & AI -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2024</div>
-              <h3 class="edu-degree-title">M.Sc. in Data Science and Artificial Intelligence</h3>
-              <div class="edu-institution">Asian Institute of Technology (AIT), Thailand</div>
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <span>Programming &amp; Development</span>
             </div>
-
-            <!-- 2017: B.Sc. IT -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2017</div>
-              <h3 class="edu-degree-title">B.Sc. in Information Technology</h3>
-              <div class="edu-institution">Build Bright University, Phnom Penh</div>
+            <div class="skill-tag-cloud">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Terminal / Shell</span>
             </div>
+          </div>
 
-            <!-- 2018: B.Ed. TEFL -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2018</div>
-              <h3 class="edu-degree-title">B.Ed. in Teaching English as a Foreign Language</h3>
-              <div class="edu-institution">Beltei International University, Phnom Penh</div>
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <span>Cloud &amp; Project Management</span>
             </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-tag">Scrum / Agile Workflows</span>
+              <span class="skill-tag">Jira/ Trello</span>
+              <span class="skill-tag">Microsoft Office 365</span>
+              <span class="skill-tag">CRM Systems &amp; e-Ordering Management</span>
+              <span class="skill-tag">Google Cloud Storage</span>
+            </div>
+          </div>
 
-            <!-- 2013: High School -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2013</div>
-              <h3 class="edu-degree-title">National High School Diploma</h3>
-              <div class="edu-institution">Sok An Prey Sandek High School, Takeo</div>
+          <div class="skill-category-card">
+            <div class="skill-cat-title">
+              <span>Design &amp; UI/UX</span>
+            </div>
+            <div class="skill-tag-cloud">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Adobe Illustrator</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Canva</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ========================================================================
+        <!-- Formal Education Degrees -->
+        <div class="edu-card-list">
+          <!-- 2024: M.Sc. Data Science & AI -->
+          <div class="edu-card">
+            <div class="edu-year-badge">2024</div>
+            <h3 class="edu-degree-title">M.Sc. in Data Science and Artificial Intelligence</h3>
+            <div class="edu-institution">Asian Institute of Technology (AIT), Thailand</div>
+          </div>
+
+          <!-- 2017: B.Sc. IT -->
+          <div class="edu-card">
+            <div class="edu-year-badge">2017</div>
+            <h3 class="edu-degree-title">B.Sc. in Information Technology</h3>
+            <div class="edu-institution">Build Bright University, Phnom Penh</div>
+          </div>
+
+          <!-- 2018: B.Ed. TEFL -->
+          <div class="edu-card">
+            <div class="edu-year-badge">2018</div>
+            <h3 class="edu-degree-title">B.Ed. in Teaching English as a Foreign Language</h3>
+            <div class="edu-institution">Beltei International University, Phnom Penh</div>
+          </div>
+
+          <!-- 2013: High School -->
+          <div class="edu-card">
+            <div class="edu-year-badge">2013</div>
+            <h3 class="edu-degree-title">National High School Diploma</h3>
+            <div class="edu-institution">Sok An Prey Sandek High School, Takeo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        ACTUATED FIELDWORK & WORKSHOP GALLERY
        (Photos from AI Adoption Development_Project & Random_Teaching)
        ======================================================================== -->
-    <section id="fieldwork" style="background:var(--bg-alt);">
-      <div class="container">
-        <div class="section-eyebrow">&#10022; Photographic Fieldwork &amp; Engagements</div>
-        <h2 class="section-title">Enterprise Training &amp; Academic Lectures</h2>
-        <p class="section-desc">
-          Photographic documentation across 4 core tracks: <strong>AI 101</strong> (Work Smarter with AI &amp; Interactive Prompt Clinic), <strong>AI 201</strong> (AI In Action: Productivity &amp; Real Business Cases), <strong>AI 201</strong> (Team Enablement AI Productivity Factory), and <strong>University Lecturing</strong> (Computer Science at PPIU; Digital Business &amp; Digital Media Design at UTE).
-        </p>
+  <section id="fieldwork" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-eyebrow">&#10022; Photographic Fieldwork &amp; Engagements</div>
+      <h2 class="section-title">Enterprise Training &amp; Academic Lectures</h2>
+      <p class="section-desc">
+        Photographic documentation across 4 core tracks: <strong>AI 101</strong> (Work Smarter with AI &amp; Interactive
+        Prompt Clinic), <strong>AI 201</strong> (AI In Action: Productivity &amp; Real Business Cases), <strong>AI
+          201</strong> (Team Enablement AI Productivity Factory), and <strong>University Lecturing</strong> (Computer
+        Science at PPIU; Digital Business &amp; Digital Media Design at UTE).
+      </p>
 
-        <!-- Category Filter Tabs -->
-        <div class="gallery-filter-bar">
-          <button type="button" class="gallery-filter-btn active" data-filter="all">
-            <span>All Engagements</span>
-            <span class="gallery-filter-count">14</span>
-          </button>
-          <button type="button" class="gallery-filter-btn" data-filter="ai-101">
-            <span>AI 101: Prompt Clinic</span>
-            <span class="gallery-filter-count">3</span>
-          </button>
-          <button type="button" class="gallery-filter-btn" data-filter="ai-201-biz">
-            <span>AI 201: Productivity</span>
-            <span class="gallery-filter-count">3</span>
-          </button>
-          <button type="button" class="gallery-filter-btn" data-filter="ai-201-mfg">
-            <span>AI 201: Manufacturing</span>
-            <span class="gallery-filter-count">3</span>
-          </button>
-          <button type="button" class="gallery-filter-btn" data-filter="university">
-            <span>University Lecturing</span>
-            <span class="gallery-filter-count">5</span>
-          </button>
-        </div>
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filter-bar">
+        <button type="button" class="gallery-filter-btn active" data-filter="all">
+          <span>All Engagements</span>
+          <span class="gallery-filter-count">14</span>
+        </button>
+        <button type="button" class="gallery-filter-btn" data-filter="ai-101">
+          <span>AI 101: Prompt Clinic</span>
+          <span class="gallery-filter-count">3</span>
+        </button>
+        <button type="button" class="gallery-filter-btn" data-filter="ai-201-biz">
+          <span>AI 201: Productivity</span>
+          <span class="gallery-filter-count">3</span>
+        </button>
+        <button type="button" class="gallery-filter-btn" data-filter="ai-201-mfg">
+          <span>AI 201: Manufacturing</span>
+          <span class="gallery-filter-count">3</span>
+        </button>
+        <button type="button" class="gallery-filter-btn" data-filter="university">
+          <span>University Lecturing</span>
+          <span class="gallery-filter-count">5</span>
+        </button>
+      </div>
 
-        <!-- Photo Cards Grid with Actuated Overlay Motion -->
-        <div class="gallery-grid" id="galleryGrid">
+      <!-- Photo Cards Grid with Actuated Overlay Motion -->
+      <div class="gallery-grid" id="galleryGrid">
 
-          <!-- ==========================================
+        <!-- ==========================================
                Track 1: AI 101 — Work Smarter with AI & Interactive Prompt Clinic (3 items)
                ========================================== -->
 
-          <!-- 1. AI 101: Work Smarter with AI — Kickoff -->
-          <div class="gallery-item" data-category="ai-101"
-            data-src="./AI Adoption Development_Project/AI101 (1).jpg"
-            data-title="AI 101: Work Smarter with AI — Kickoff"
-            data-desc="Foundational enterprise enablement and prompt clinic kickoff on 'Using AI to Improve Daily Work Productivity' with corporate cross-functional teams.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI101 (1).jpg" alt="AI 101: Work Smarter with AI — Kickoff"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 101: Work Smarter with AI — Kickoff</div>
-              <div class="gallery-sub">Work Smarter with AI &bull; Foundational Enterprise Productivity Enablement</div>
+        <!-- 1. AI 101: Work Smarter with AI — Kickoff -->
+        <div class="gallery-item" data-category="ai-101" data-src="./AI Adoption Development_Project/AI101 (1).jpg"
+          data-title="AI 101: Work Smarter with AI — Kickoff"
+          data-desc="Foundational enterprise enablement and prompt clinic kickoff on 'Using AI to Improve Daily Work Productivity' with corporate cross-functional teams.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI101 (1).jpg" alt="AI 101: Work Smarter with AI — Kickoff"
+              class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 101: Work Smarter with AI — Kickoff</div>
+            <div class="gallery-sub">Work Smarter with AI &bull; Foundational Enterprise Productivity Enablement</div>
+          </div>
+        </div>
+
+        <!-- 2. AI 101: Work Smarter with AI & Interactive Prompt Clinic -->
+        <div class="gallery-item" data-category="ai-101" data-src="./AI Adoption Development_Project/AI101 (2).jpg"
+          data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic"
+          data-desc="Interactive boardroom session on modern generative AI tooling, workplace readiness, and everyday prompt engineering techniques.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI101 (2).jpg"
+              alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic" class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic</div>
+            <div class="gallery-sub">Interactive Prompt Clinic &bull; Boardroom AI Readiness &amp; Workflow Mastery
             </div>
           </div>
+        </div>
 
-          <!-- 2. AI 101: Work Smarter with AI & Interactive Prompt Clinic -->
-          <div class="gallery-item" data-category="ai-101"
-            data-src="./AI Adoption Development_Project/AI101 (2).jpg"
-            data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic"
-            data-desc="Interactive boardroom session on modern generative AI tooling, workplace readiness, and everyday prompt engineering techniques.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI101 (2).jpg" alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic</div>
-              <div class="gallery-sub">Interactive Prompt Clinic &bull; Boardroom AI Readiness &amp; Workflow Mastery</div>
-            </div>
+        <!-- 3. AI 101: Work Smarter with AI & Interactive Prompt Clinic — Online Webinar -->
+        <div class="gallery-item" data-category="ai-101" data-src="./AI Adoption Development_Project/AI101 (3).jpg"
+          data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar"
+          data-desc="Live interactive enterprise-wide webinar delivering generative AI adoption strategies and prompt engineering clinics to cross-departmental staff online.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI101 (3).jpg"
+              alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar" class="gallery-thumb"
+              loading="lazy" />
+            <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
           </div>
-
-          <!-- 3. AI 101: Work Smarter with AI & Interactive Prompt Clinic — Online Webinar -->
-          <div class="gallery-item" data-category="ai-101"
-            data-src="./AI Adoption Development_Project/AI101 (3).jpg"
-            data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar"
-            data-desc="Live interactive enterprise-wide webinar delivering generative AI adoption strategies and prompt engineering clinics to cross-departmental staff online.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI101 (3).jpg" alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar
             </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar</div>
-              <div class="gallery-sub">Interactive Prompt Clinic &bull; Live Cross-Departmental Digital Enablement</div>
-            </div>
+            <div class="gallery-sub">Interactive Prompt Clinic &bull; Live Cross-Departmental Digital Enablement</div>
           </div>
+        </div>
 
-          <!-- ==========================================
+        <!-- ==========================================
                Track 2: AI 201 — AI In Action: Productivity & Real Business Cases (3 items)
                ========================================== -->
 
-          <!-- 4. AI 201: Real Business Cases Lab -->
-          <div class="gallery-item" data-category="ai-201-biz"
-            data-src="./AI Adoption Development_Project/AI201 (1).JPG"
-            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-            data-desc="Hands-on collaborative problem-solving lab applying Copilot Chat to summarize operational issues, classify thematic patterns, and produce actionable business resolution plans.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201 (1).JPG" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Productivity</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
-              <div class="gallery-sub">Real Business Cases Lab &bull; Copilot Problem-Solving &amp; Root-Cause Analysis</div>
+        <!-- 4. AI 201: Real Business Cases Lab -->
+        <div class="gallery-item" data-category="ai-201-biz" data-src="./AI Adoption Development_Project/AI201 (1).JPG"
+          data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+          data-desc="Hands-on collaborative problem-solving lab applying Copilot Chat to summarize operational issues, classify thematic patterns, and produce actionable business resolution plans.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201 (1).JPG"
+              alt="AI 201: AI In Action — Productivity &amp; Real Business Cases" class="gallery-thumb"
+              loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Productivity</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+            <div class="gallery-sub">Real Business Cases Lab &bull; Copilot Problem-Solving &amp; Root-Cause Analysis
             </div>
           </div>
+        </div>
 
-          <!-- 5. AI 201: Team Enablement Celebration -->
-          <div class="gallery-item" data-category="ai-201-biz"
-            data-src="./AI Adoption Development_Project/AI201 (2).JPG"
-            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-            data-desc="Cross-functional team celebrating successful completion of intermediate enterprise AI productivity routines and business workflow automation.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201 (2).JPG" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Productivity</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
-              <div class="gallery-sub">Team Enablement Celebration &bull; Multi-Department Workflow Execution &amp; Alignment</div>
-            </div>
+        <!-- 5. AI 201: Team Enablement Celebration -->
+        <div class="gallery-item" data-category="ai-201-biz" data-src="./AI Adoption Development_Project/AI201 (2).JPG"
+          data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+          data-desc="Cross-functional team celebrating successful completion of intermediate enterprise AI productivity routines and business workflow automation.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201 (2).JPG"
+              alt="AI 201: AI In Action — Productivity &amp; Real Business Cases" class="gallery-thumb"
+              loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Productivity</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
           </div>
-
-          <!-- 6. AI 201: Productivity Masterclass -->
-          <div class="gallery-item" data-category="ai-201-biz"
-            data-src="./AI Adoption Development_Project/AI201 (3).jpg"
-            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-            data-desc="Enterprise masterclass cohort concluding applied generative AI training on advanced prompt chains, digital workflow integration, and cross-team productivity.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201 (3).jpg" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Productivity</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
-              <div class="gallery-sub">Productivity Masterclass &bull; Intermediate AI Tools &amp; Daily Business Productivity</div>
-            </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+            <div class="gallery-sub">Team Enablement Celebration &bull; Multi-Department Workflow Execution &amp;
+              Alignment</div>
           </div>
+        </div>
 
-          <!-- ==========================================
+        <!-- 6. AI 201: Productivity Masterclass -->
+        <div class="gallery-item" data-category="ai-201-biz" data-src="./AI Adoption Development_Project/AI201 (3).jpg"
+          data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+          data-desc="Enterprise masterclass cohort concluding applied generative AI training on advanced prompt chains, digital workflow integration, and cross-team productivity.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201 (3).jpg"
+              alt="AI 201: AI In Action — Productivity &amp; Real Business Cases" class="gallery-thumb"
+              loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Productivity</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+            <div class="gallery-sub">Productivity Masterclass &bull; Intermediate AI Tools &amp; Daily Business
+              Productivity</div>
+          </div>
+        </div>
+
+        <!-- ==========================================
                Track 3: AI 201 — Enablement AI In Action for Manufacturing (3 items)
                ========================================== -->
 
-          <!-- 7. AI 201: Factory Cohort Showcase -->
-          <div class="gallery-item" data-category="ai-201-mfg"
-            data-src="./AI Adoption Development_Project/AI201_Factory (1).jpg"
-            data-title="AI 201: Team Enablement AI Productivity Factory"
-            data-desc="Plant engineering and manufacturing operations teams gathered on the main auditorium stage following practical AI productivity enablement.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201_Factory (1).jpg" alt="AI 201: Team Enablement AI Productivity Factory"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
-              <div class="gallery-sub">Factory Cohort Showcase &bull; Plant Operations &amp; Engineering Teams</div>
-            </div>
+        <!-- 7. AI 201: Factory Cohort Showcase -->
+        <div class="gallery-item" data-category="ai-201-mfg"
+          data-src="./AI Adoption Development_Project/AI201_Factory (1).jpg"
+          data-title="AI 201: Team Enablement AI Productivity Factory"
+          data-desc="Plant engineering and manufacturing operations teams gathered on the main auditorium stage following practical AI productivity enablement.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201_Factory (1).jpg"
+              alt="AI 201: Team Enablement AI Productivity Factory" class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
           </div>
-
-          <!-- 8. AI 201: Live Auditorium Enablement -->
-          <div class="gallery-item" data-category="ai-201-mfg"
-            data-src="./AI Adoption Development_Project/AI201_Factory (2).JPG"
-            data-title="AI 201: Team Enablement AI Productivity Factory"
-            data-desc="Direct stage-to-hall facilitation delivering practical AI workflows, operational problem framing, and productivity routines to plant personnel.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201_Factory (2).JPG" alt="AI 201: Team Enablement AI Productivity Factory"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
-              <div class="gallery-sub">Live Auditorium Enablement &bull; Real-Time Plant Workflow Coaching</div>
-            </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+            <div class="gallery-sub">Factory Cohort Showcase &bull; Plant Operations &amp; Engineering Teams</div>
           </div>
+        </div>
 
-          <!-- 9. AI 201: Copilot Studio & Agent Builder -->
-          <div class="gallery-item" data-category="ai-201-mfg"
-            data-src="./AI Adoption Development_Project/AI201_Factory (3).jpg"
-            data-title="AI 201: Team Enablement AI Productivity Factory"
-            data-desc="Live deep-dive on custom Copilot Studio agent architecture, system prompts, knowledge grounding, and low-code automations for industrial workflows.">
-            <div class="gallery-thumb-wrap">
-              <img src="./AI Adoption Development_Project/AI201_Factory (3).jpg" alt="AI 201: Team Enablement AI Productivity Factory"
-                class="gallery-thumb" loading="lazy" />
-              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
-              <div class="gallery-sub">Copilot Studio &amp; Agent Builder &bull; Custom Agents &amp; Industrial Knowledge Grounding</div>
-            </div>
+        <!-- 8. AI 201: Live Auditorium Enablement -->
+        <div class="gallery-item" data-category="ai-201-mfg"
+          data-src="./AI Adoption Development_Project/AI201_Factory (2).JPG"
+          data-title="AI 201: Team Enablement AI Productivity Factory"
+          data-desc="Direct stage-to-hall facilitation delivering practical AI workflows, operational problem framing, and productivity routines to plant personnel.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201_Factory (2).JPG"
+              alt="AI 201: Team Enablement AI Productivity Factory" class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
           </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+            <div class="gallery-sub">Live Auditorium Enablement &bull; Real-Time Plant Workflow Coaching</div>
+          </div>
+        </div>
 
-          <!-- ==========================================
+        <!-- 9. AI 201: Copilot Studio & Agent Builder -->
+        <div class="gallery-item" data-category="ai-201-mfg"
+          data-src="./AI Adoption Development_Project/AI201_Factory (3).jpg"
+          data-title="AI 201: Team Enablement AI Productivity Factory"
+          data-desc="Live deep-dive on custom Copilot Studio agent architecture, system prompts, knowledge grounding, and low-code automations for industrial workflows.">
+          <div class="gallery-thumb-wrap">
+            <img src="./AI Adoption Development_Project/AI201_Factory (3).jpg"
+              alt="AI 201: Team Enablement AI Productivity Factory" class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+            <div class="gallery-sub">Copilot Studio &amp; Agent Builder &bull; Custom Agents &amp; Industrial Knowledge
+              Grounding</div>
+          </div>
+        </div>
+
+        <!-- ==========================================
                Track 4: University Lecturing — PPIU & UTE (5 items)
                ========================================== -->
 
-          <!-- 10. PPIU: Computer Science Practical Lab -->
-          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU.jpg"
-            data-title="Phnom Penh International University (PPIU)"
-            data-desc="Undergraduate practical computing lab instruction and hands-on programming mentoring for Computer Science students at Phnom Penh International University (PPIU) Campus.">
-            <div class="gallery-thumb-wrap">
-              <img src="./Random_Teaching/PPIU.jpg" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
-                loading="lazy" />
-              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
-              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Practical Computing Laboratory Session</div>
+        <!-- 10. PPIU: Computer Science Practical Lab -->
+        <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU.jpg"
+          data-title="Phnom Penh International University (PPIU)"
+          data-desc="Undergraduate practical computing lab instruction and hands-on programming mentoring for Computer Science students at Phnom Penh International University (PPIU) Campus.">
+          <div class="gallery-thumb-wrap">
+            <img src="./Random_Teaching/PPIU.jpg" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
+              loading="lazy" />
+            <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+            <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Practical Computing Laboratory Session
             </div>
           </div>
-
-          <!-- 11. PPIU: Computer Science Lecture Hall Session -->
-          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU01.JPG"
-            data-title="Phnom Penh International University (PPIU)"
-            data-desc="Academic lecture hall instruction and cohort curriculum delivery for Computer Science students at Phnom Penh International University (PPIU) Campus.">
-            <div class="gallery-thumb-wrap">
-              <img src="./Random_Teaching/PPIU01.JPG" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
-                loading="lazy" />
-              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
-              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Lecture Hall Session &amp; Student Cohort</div>
-            </div>
-          </div>
-
-          <!-- 12. PPIU: Computer Science Cohort Mentorship -->
-          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPUI02.jpg"
-            data-title="Phnom Penh International University (PPIU)"
-            data-desc="Student academic cohort mentorship, project guidance, and interactive community engagement with Computer Science undergraduates at Phnom Penh International University (PPIU) Campus.">
-            <div class="gallery-thumb-wrap">
-              <img src="./Random_Teaching/PPUI02.jpg" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
-                loading="lazy" />
-              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
-              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Cohort Mentorship &amp; Guidance</div>
-            </div>
-          </div>
-
-          <!-- 13. UTE: Digital Business Cohort -->
-          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE01.jpg"
-            data-title="University of Technology and Entrepreneurship (UTE)"
-            data-desc="Academic instruction, digital enterprise modeling, and cohort seminar for Digital Business students at University of Technology and Entrepreneurship (UTE) Campus.">
-            <div class="gallery-thumb-wrap">
-              <img src="./Random_Teaching/UTE01.jpg" alt="University of Technology and Entrepreneurship (UTE)" class="gallery-thumb"
-                loading="lazy" />
-              <span class="gallery-overlay-badge">UTE: Digital Business</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
-              <div class="gallery-sub">UTE Campus &bull; Digital Business &bull; Academic Lecturing &amp; University Cohort</div>
-            </div>
-          </div>
-
-          <!-- 14. UTE: Digital Media Design Classroom -->
-          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE.jpg"
-            data-title="University of Technology and Entrepreneurship (UTE)"
-            data-desc="Classroom mentorship, design thinking, and digital media development guidance for Digital Media Design students at University of Technology and Entrepreneurship (UTE) Campus.">
-            <div class="gallery-thumb-wrap">
-              <img src="./Random_Teaching/UTE.jpg" alt="University of Technology and Entrepreneurship (UTE)" class="gallery-thumb"
-                loading="lazy" />
-              <span class="gallery-overlay-badge">UTE: Digital Media Design</span>
-              <span class="gallery-preview-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
-                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
-                </svg>
-                <span>Enlarge</span>
-              </span>
-            </div>
-            <div class="gallery-info">
-              <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
-              <div class="gallery-sub">UTE Campus &bull; Digital Media Design &bull; Classroom Mentorship &amp; Student Guidance</div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
 
-    <!-- ========================================================================
+        <!-- 11. PPIU: Computer Science Lecture Hall Session -->
+        <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU01.JPG"
+          data-title="Phnom Penh International University (PPIU)"
+          data-desc="Academic lecture hall instruction and cohort curriculum delivery for Computer Science students at Phnom Penh International University (PPIU) Campus.">
+          <div class="gallery-thumb-wrap">
+            <img src="./Random_Teaching/PPIU01.JPG" alt="Phnom Penh International University (PPIU)"
+              class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+            <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Lecture Hall Session &amp;
+              Student Cohort</div>
+          </div>
+        </div>
+
+        <!-- 12. PPIU: Computer Science Cohort Mentorship -->
+        <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPUI02.jpg"
+          data-title="Phnom Penh International University (PPIU)"
+          data-desc="Student academic cohort mentorship, project guidance, and interactive community engagement with Computer Science undergraduates at Phnom Penh International University (PPIU) Campus.">
+          <div class="gallery-thumb-wrap">
+            <img src="./Random_Teaching/PPUI02.jpg" alt="Phnom Penh International University (PPIU)"
+              class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+            <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Cohort Mentorship &amp;
+              Guidance</div>
+          </div>
+        </div>
+
+        <!-- 13. UTE: Digital Business Cohort -->
+        <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE01.jpg"
+          data-title="University of Technology and Entrepreneurship (UTE)"
+          data-desc="Academic instruction, digital enterprise modeling, and cohort seminar for Digital Business students at University of Technology and Entrepreneurship (UTE) Campus.">
+          <div class="gallery-thumb-wrap">
+            <img src="./Random_Teaching/UTE01.jpg" alt="University of Technology and Entrepreneurship (UTE)"
+              class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">UTE: Digital Business</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
+            <div class="gallery-sub">UTE Campus &bull; Digital Business &bull; Academic Lecturing &amp; University
+              Cohort</div>
+          </div>
+        </div>
+
+        <!-- 14. UTE: Digital Media Design Classroom -->
+        <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE.jpg"
+          data-title="University of Technology and Entrepreneurship (UTE)"
+          data-desc="Classroom mentorship, design thinking, and digital media development guidance for Digital Media Design students at University of Technology and Entrepreneurship (UTE) Campus.">
+          <div class="gallery-thumb-wrap">
+            <img src="./Random_Teaching/UTE.jpg" alt="University of Technology and Entrepreneurship (UTE)"
+              class="gallery-thumb" loading="lazy" />
+            <span class="gallery-overlay-badge">UTE: Digital Media Design</span>
+            <span class="gallery-preview-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+              </svg>
+              <span>Enlarge</span>
+            </span>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
+            <div class="gallery-sub">UTE Campus &bull; Digital Media Design &bull; Classroom Mentorship &amp; Student
+              Guidance</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        Certifications & Training (From Latest Resume)
        ======================================================================== -->
-    <section id="certifications">
-      <div class="container">
-        <div class="section-eyebrow">&#10022; Credentials &amp; Recognition</div>
-        <h2 class="section-title">Certifications &amp; Training</h2>
-        <p class="section-desc">
-          Professional accreditations and competitive awards documented in the verified resume.
-        </p>
+  <section id="certifications">
+    <div class="container">
+      <div class="section-eyebrow">&#10022; Credentials &amp; Recognition</div>
+      <h2 class="section-title">Certifications &amp; Training</h2>
+      <p class="section-desc">
+        Professional accreditations and competitive awards documented in the verified resume.
+      </p>
 
-        <div class="certs-grid">
-          <!-- University Teaching: The University of Hong Kong -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">The University of Hong Kong &bull; Coursera</div>
-              <div class="cert-name">University Teaching</div>
-            </div>
-            <div class="cert-id-badge">Credential: f81ba2f6c297eb22526a437db6f7e2a1</div>
+      <div class="certs-grid">
+        <!-- University Teaching: The University of Hong Kong -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">The University of Hong Kong &bull; Coursera</div>
+            <div class="cert-name">University Teaching</div>
           </div>
+          <div class="cert-id-badge">Credential: f81ba2f6c297eb22526a437db6f7e2a1</div>
+        </div>
 
-          <!-- Advertising with Meta -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">Meta &bull; Coursera</div>
-              <div class="cert-name">Advertising with Meta</div>
-            </div>
-            <div class="cert-id-badge">Credential: e9ffa974911db5751010036d4b8fe525</div>
+        <!-- Advertising with Meta -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">Meta &bull; Coursera</div>
+            <div class="cert-name">Advertising with Meta</div>
           </div>
+          <div class="cert-id-badge">Credential: e9ffa974911db5751010036d4b8fe525</div>
+        </div>
 
-          <!-- Agile Project Management -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">Coursera</div>
-              <div class="cert-name">Agile Project Management</div>
-            </div>
-            <div class="cert-id-badge">Credential: S6468M8CY0Q6</div>
+        <!-- Agile Project Management -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">Coursera</div>
+            <div class="cert-name">Agile Project Management</div>
           </div>
+          <div class="cert-id-badge">Credential: S6468M8CY0Q6</div>
+        </div>
 
-          <!-- HubSpot Digital Marketing -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">HubSpot Academy</div>
-              <div class="cert-name">Digital Marketing Certified</div>
-            </div>
-            <div class="cert-id-badge">Credential: 0def4936721946829275e818d2dfc47b</div>
+        <!-- HubSpot Digital Marketing -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">HubSpot Academy</div>
+            <div class="cert-name">Digital Marketing Certified</div>
           </div>
+          <div class="cert-id-badge">Credential: 0def4936721946829275e818d2dfc47b</div>
+        </div>
 
-          <!-- HubSpot Social Media -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">HubSpot Academy</div>
-              <div class="cert-name">Social Media Certified</div>
-            </div>
-            <div class="cert-id-badge">Credential: 2fa4daf0ba8843c6be5fd9ab918d2ad6</div>
+        <!-- HubSpot Social Media -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">HubSpot Academy</div>
+            <div class="cert-name">Social Media Certified</div>
           </div>
+          <div class="cert-id-badge">Credential: 2fa4daf0ba8843c6be5fd9ab918d2ad6</div>
+        </div>
 
-          <!-- HubSpot SEO -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">HubSpot Academy</div>
-              <div class="cert-name">SEO Certified</div>
-            </div>
-            <div class="cert-id-badge">Credential: 7c23560031844054941ed994a10e7714</div>
+        <!-- HubSpot SEO -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">HubSpot Academy</div>
+            <div class="cert-name">SEO Certified</div>
           </div>
+          <div class="cert-id-badge">Credential: 7c23560031844054941ed994a10e7714</div>
+        </div>
 
-          <!-- BMC Cambodia Award -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">Competition Award (2023)</div>
-              <div class="cert-name">Top 20 Business Model Competition (BMC) Cambodia</div>
-            </div>
-            <div class="cert-id-badge">National Business Competition Cambodia</div>
+        <!-- BMC Cambodia Award -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">Competition Award (2023)</div>
+            <div class="cert-name">Top 20 Business Model Competition (BMC) Cambodia</div>
           </div>
+          <div class="cert-id-badge">National Business Competition Cambodia</div>
+        </div>
 
-          <!-- AIT Hackathon Award -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">AIT Entrepreneurship Center (2023)</div>
-              <div class="cert-name">Awards Based on Popularity</div>
-            </div>
-            <div class="cert-id-badge">4th Sustainability Hackathon</div>
+        <!-- AIT Hackathon Award -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">AIT Entrepreneurship Center (2023)</div>
+            <div class="cert-name">Awards Based on Popularity</div>
           </div>
+          <div class="cert-id-badge">4th Sustainability Hackathon</div>
+        </div>
 
-          <!-- Employee of the Month -->
-          <div class="cert-card">
-            <div>
-              <div class="cert-issuer">Corporate Recognition (2021)</div>
-              <div class="cert-name">Employee of the Month</div>
-            </div>
-            <div class="cert-id-badge">Entrepreneurship &amp; Collaboration &bull; Kampot Cement / SCG</div>
+        <!-- Employee of the Month -->
+        <div class="cert-card">
+          <div>
+            <div class="cert-issuer">Corporate Recognition (2021)</div>
+            <div class="cert-name">Employee of the Month</div>
           </div>
+          <div class="cert-id-badge">Entrepreneurship &amp; Collaboration &bull; Kampot Cement / SCG</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========================================================================
+  <!-- ========================================================================
        Contact Section — Redesigned Executive Channels Hub
        ======================================================================== -->
-    <section id="contact" style="background:var(--bg-alt); padding: clamp(4rem, 8vw, 6.5rem) 0; scroll-margin-top: 100px;">
-      <div class="container">
-        <div class="contact-section-wrap">
+  <section id="contact"
+    style="background:var(--bg-alt); padding: clamp(4rem, 8vw, 6.5rem) 0; scroll-margin-top: 100px;">
+    <div class="container">
+      <div class="contact-section-wrap">
 
-          <!-- Header Block -->
-          <div class="contact-header-block">
-            <div class="contact-status-chip">
-              <span class="status-pulse-dot"></span>
-              <span>Open for Advisory, AI Transformation &amp; Academic Lecturing</span>
+        <!-- Header Block -->
+        <div class="contact-header-block">
+          <div class="contact-status-chip">
+            <span class="status-pulse-dot"></span>
+            <span>Open for Advisory, AI Transformation &amp; Academic Lecturing</span>
+          </div>
+          <h2 class="contact-title">
+            Let's Build Something <span class="contact-title-accent">Exceptional</span>
+          </h2>
+          <p class="contact-lead">
+            <span class="contact-lead-line">Based in <strong>Phnom Penh, Cambodia</strong>. Actively partnering on
+              enterprise business analysis,</span>
+            <span class="contact-lead-line">generative AI workflow transformation, and university lecturing at PPIU
+              &amp; UTE.</span>
+          </p>
+        </div>
+
+        <!-- 3-Channel Bento Cards Grid -->
+        <div class="contact-channels-grid">
+
+          <!-- Card 1: Direct Email -->
+          <div class="contact-channel-card">
+            <div class="channel-card-top">
+              <div class="channel-icon-box email-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="30" height="30">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
             </div>
-            <h2 class="contact-title">
-              Let's Build Something <span class="contact-title-accent">Exceptional</span>
-            </h2>
-            <p class="contact-lead">
-              <span class="contact-lead-line">Based in <strong>Phnom Penh, Cambodia</strong>. Actively partnering on enterprise business analysis,</span>
-              <span class="contact-lead-line">generative AI workflow transformation, and university lecturing at PPIU &amp; UTE.</span>
+            <div class="channel-name">Executive Email</div>
+            <div class="channel-handle">sornrambo@gmail.com</div>
+            <p class="channel-desc">
+              Ideal for detailed enterprise proposals, formal consultation briefs, RFPs, and academic syllabus
+              collaboration.
             </p>
+            <div class="channel-actions">
+              <a href="mailto:sornrambo@gmail.com" class="channel-action-btn btn-main">
+                <span>Send Email</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+              <button type="button" class="channel-action-btn btn-copy copy-email-btn" data-copy="sornrambo@gmail.com"
+                title="Copy email address" aria-label="Copy email address">
+                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15"
+                  height="15">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                <span class="copy-label">Copy</span>
+              </button>
+            </div>
           </div>
 
-          <!-- 3-Channel Bento Cards Grid -->
-          <div class="contact-channels-grid">
-
-            <!-- Card 1: Direct Email -->
-            <div class="contact-channel-card">
-              <div class="channel-card-top">
-                <div class="channel-icon-box email-box">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="30" height="30">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                </div>
-              </div>
-              <div class="channel-name">Executive Email</div>
-              <div class="channel-handle">sornrambo@gmail.com</div>
-              <p class="channel-desc">
-                Ideal for detailed enterprise proposals, formal consultation briefs, RFPs, and academic syllabus collaboration.
-              </p>
-              <div class="channel-actions">
-                <a href="mailto:sornrambo@gmail.com" class="channel-action-btn btn-main">
-                  <span>Send Email</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
-                    <line x1="7" y1="17" x2="17" y2="7" />
-                    <polyline points="7 7 17 7 17 17" />
-                  </svg>
-                </a>
-                <button type="button" class="channel-action-btn btn-copy copy-email-btn" data-copy="sornrambo@gmail.com" title="Copy email address" aria-label="Copy email address">
-                  <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                  </svg>
-                  <span class="copy-label">Copy</span>
-                </button>
+          <!-- Card 2: LinkedIn -->
+          <div class="contact-channel-card">
+            <div class="channel-card-top">
+              <div class="channel-icon-box linkedin-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+                </svg>
               </div>
             </div>
+            <div class="channel-name">LinkedIn Connection</div>
+            <div class="channel-handle">linkedin.com/in/rambosorn</div>
+            <p class="channel-desc">
+              Verified enterprise career history, project milestones, peer recommendations, and business intelligence
+              updates.
+            </p>
+            <div class="channel-actions">
+              <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
+                class="channel-action-btn btn-main">
+                <span>Connect on LinkedIn</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-            <!-- Card 2: LinkedIn -->
-            <div class="contact-channel-card">
-              <div class="channel-card-top">
-                <div class="channel-icon-box linkedin-box">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="channel-name">LinkedIn Connection</div>
-              <div class="channel-handle">linkedin.com/in/rambosorn</div>
-              <p class="channel-desc">
-                Verified enterprise career history, project milestones, peer recommendations, and business intelligence updates.
-              </p>
-              <div class="channel-actions">
-                <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer" class="channel-action-btn btn-main">
-                  <span>Connect on LinkedIn</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
-                    <line x1="7" y1="17" x2="17" y2="7" />
-                    <polyline points="7 7 17 7 17 17" />
-                  </svg>
-                </a>
+          <!-- Card 3: Telegram -->
+          <div class="contact-channel-card">
+            <div class="channel-card-top">
+              <div class="channel-icon-box telegram-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
+                </svg>
               </div>
             </div>
-
-            <!-- Card 3: Telegram -->
-            <div class="contact-channel-card">
-              <div class="channel-card-top">
-                <div class="channel-icon-box telegram-box">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
-                  </svg>
-                </div>
-              </div>
-              <div class="channel-name">Telegram Direct</div>
-              <div class="channel-handle">@rambosorn</div>
-              <p class="channel-desc">
-                Direct channel for real-time agenda alignments, fast scheduling check-ins, and direct message exchanges.
-              </p>
-              <div class="channel-actions">
-                <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-action-btn btn-main">
-                  <span>Chat @rambosorn</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
-                    <line x1="7" y1="17" x2="17" y2="7" />
-                    <polyline points="7 7 17 7 17 17" />
-                  </svg>
-                </a>
-              </div>
+            <div class="channel-name">Telegram Direct</div>
+            <div class="channel-handle">@rambosorn</div>
+            <p class="channel-desc">
+              Direct channel for real-time agenda alignments, fast scheduling check-ins, and direct message exchanges.
+            </p>
+            <div class="channel-actions">
+              <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer"
+                class="channel-action-btn btn-main">
+                <span>Chat @rambosorn</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg>
+              </a>
             </div>
-
           </div>
 
         </div>
 
-        <!-- Clean Footer -->
-        <footer class="site-footer">
-          <div>&copy; 2026 Sorn Rambo. All rights reserved.</div>
-          <div>Phnom Penh, Cambodia &bull; Kampot Cement Co., Ltd. (2019&ndash;Present) &bull; Lecturer @ PPIU &amp; UTE</div>
-        </footer>
       </div>
-    </section>
 
-    <!-- ========================================================================
+      <!-- Clean Footer -->
+      <footer class="site-footer">
+        <div>&copy; 2026 Sorn Rambo. All rights reserved.</div>
+        <div>Phnom Penh, Cambodia &bull; Kampot Cement Co., Ltd. (2019&ndash;Present) &bull; Lecturer @ PPIU &amp; UTE
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        CENTERED FLOATING SCROLL NOTIFICATION ACTION ("notif-link w-inline-block")
        (Appears when scrolling to "Professional Experience")
        ======================================================================== -->
-    <div class="scroll-notif-wrapper" id="scrollNotifWrapper" aria-hidden="true">
-      <a href="#contact" class="notif-link w-inline-block" id="scrollNotifLink"
-        aria-label="Book a free discovery call with Sorn Rambo">
-        <div class="notif-pill-inner">
-          <span class="notif-left-label">Book a free discovery call</span>
-          <div class="notif-cta-btn">
-            <span class="notif-cta-text">BOOK A CALL</span>
-            <div class="notif-avatar-cluster" aria-hidden="true">
-              <div class="notif-avatar-circle">
-                <img src="./1.png" alt="Sorn Rambo" class="notif-avatar-pic" />
-              </div>
-              <div class="notif-avatar-crescent"></div>
+  <div class="scroll-notif-wrapper" id="scrollNotifWrapper" aria-hidden="true">
+    <a href="#contact" class="notif-link w-inline-block" id="scrollNotifLink"
+      aria-label="Book a free discovery call with Sorn Rambo">
+      <div class="notif-pill-inner">
+        <span class="notif-left-label">Book a free discovery call</span>
+        <div class="notif-cta-btn">
+          <span class="notif-cta-text">BOOK A CALL</span>
+          <div class="notif-avatar-cluster" aria-hidden="true">
+            <div class="notif-avatar-circle">
+              <img src="./1.png" alt="Sorn Rambo" class="notif-avatar-pic" />
             </div>
+            <div class="notif-avatar-crescent"></div>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- ========================================================================
-       High-Res Lightbox Modal
-       ======================================================================== -->
-    <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
-      <div class="lightbox-content">
-        <img src="" alt="Enlarged visual evidence" class="lightbox-img" id="lightbox-img" />
-        <div class="lightbox-caption-bar">
-          <div>
-            <div class="lightbox-caption-title" id="lightbox-title"></div>
-            <div class="lightbox-caption-sub" id="lightbox-desc"></div>
-          </div>
-          <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close image preview">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-              <line x1="18" y1="6" x2="6" y2="18" />
-              <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>
-          </button>
         </div>
       </div>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       High-Res Lightbox Modal
+       ======================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged visual evidence" class="lightbox-img" id="lightbox-img" />
+      <div class="lightbox-caption-bar">
+        <div>
+          <div class="lightbox-caption-title" id="lightbox-title"></div>
+          <div class="lightbox-caption-sub" id="lightbox-desc"></div>
+        </div>
+        <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close image preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script>
+  <!-- Scripts -->
+  <script>
 
-      // Night Mode / Theme Management
-      function initThemeEvents() {
-        const toggleButtons = document.querySelectorAll('.theme-toggle-btn');
-        toggleButtons.forEach(btn => {
-          btn.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('rambo_theme', next);
-          });
+    // Night Mode / Theme Management
+    function initThemeEvents() {
+      const toggleButtons = document.querySelectorAll('.theme-toggle-btn');
+      toggleButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+          const next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('rambo_theme', next);
         });
+      });
+    }
+    initThemeEvents();
+
+    // 1. Live Clock for Phnom Penh (UTC+7)
+    function updateClock() {
+      const el = document.getElementById('live-time-text');
+      if (!el) return;
+      const now = new Date();
+      let hours = now.getHours();
+      const mins = String(now.getMinutes()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'pm' : 'am';
+      hours = hours % 12 || 12;
+      el.textContent = hours + ':' + mins + ampm;
+    }
+    updateClock();
+    setInterval(updateClock, 1000);
+
+    // 2. Mobile Drawer Controls
+    const drawer = document.getElementById('mobile-drawer');
+    const drawerOpenBtn = document.getElementById('drawer-open-btn');
+    const drawerCloseBtn = document.getElementById('drawer-close-btn');
+
+    if (drawerOpenBtn) {
+      drawerOpenBtn.addEventListener('click', () => {
+        drawer.classList.add('is-open');
+        drawer.setAttribute('aria-hidden', 'false');
+      });
+    }
+
+    function closeDrawer() {
+      if (drawer) {
+        drawer.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true');
       }
-      initThemeEvents();
+    }
 
-      // 1. Live Clock for Phnom Penh (UTC+7)
-      function updateClock() {
-        const el = document.getElementById('live-time-text');
-        if (!el) return;
-        const now = new Date();
-        let hours = now.getHours();
-        const mins = String(now.getMinutes()).padStart(2, '0');
-        const ampm = hours >= 12 ? 'pm' : 'am';
-        hours = hours % 12 || 12;
-        el.textContent = hours + ':' + mins + ampm;
-      }
-      updateClock();
-      setInterval(updateClock, 1000);
+    if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+    if (drawer) {
+      drawer.addEventListener('click', (e) => {
+        if (e.target === drawer) closeDrawer();
+      });
+    }
 
-      // 2. Mobile Drawer Controls
-      const drawer = document.getElementById('mobile-drawer');
-      const drawerOpenBtn = document.getElementById('drawer-open-btn');
-      const drawerCloseBtn = document.getElementById('drawer-close-btn');
+    document.querySelectorAll('.drawer-nav-item').forEach(item => {
+      item.addEventListener('click', closeDrawer);
+    });
 
-      if (drawerOpenBtn) {
-        drawerOpenBtn.addEventListener('click', () => {
-          drawer.classList.add('is-open');
-          drawer.setAttribute('aria-hidden', 'false');
-        });
-      }
+    // 3. Dynamic Motion Avatar: Mouse Overlay Tech Style, 3D Tilt, Glare & Mode Switch
+    const avatarCard = document.getElementById('avatarCard');
+    const avatarGlare = document.getElementById('avatarGlare');
+    const modeExecBtn = document.getElementById('modeExecutiveBtn');
+    const modeAugBtn = document.getElementById('modeAugmentedBtn');
+    const orbitChipSub = document.getElementById('orbitChipSub');
+    const orbitChipTag = document.getElementById('orbitChipTag');
+    const modeBadgeLiveText = document.getElementById('modeBadgeLiveText');
 
-      function closeDrawer() {
-        if (drawer) {
-          drawer.classList.remove('is-open');
-          drawer.setAttribute('aria-hidden', 'true');
+    if (avatarCard) {
+      let isHovering = false;
+      let targetRotX = 0;
+      let targetRotY = 0;
+      let currentRotX = 0;
+      let currentRotY = 0;
+      let manualMode = 'exec'; // 'exec' or 'augmented'
+
+      function updateCardTilt() {
+        if (isHovering) {
+          currentRotX += (targetRotX - currentRotX) * 0.15;
+          currentRotY += (targetRotY - currentRotY) * 0.15;
+          avatarCard.style.transform = "perspective(1000px) rotateX(" + currentRotX.toFixed(2) + "deg) rotateY(" + currentRotY.toFixed(2) + "deg) scale3d(1.025, 1.025, 1.025)";
+          requestAnimationFrame(updateCardTilt);
         }
       }
 
-      if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
-      if (drawer) {
-        drawer.addEventListener('click', (e) => {
-          if (e.target === drawer) closeDrawer();
-        });
-      }
+      // Mouse Overlay triggers Tech Mode Transition
+      avatarCard.addEventListener('mouseenter', () => {
+        isHovering = true;
+        avatarCard.style.animation = 'none'; // pause idle float on hover
 
-      document.querySelectorAll('.drawer-nav-item').forEach(item => {
-        item.addEventListener('click', closeDrawer);
+        // Switch buttons & labels to AI Tech
+        if (modeAugBtn && modeExecBtn) {
+          modeAugBtn.classList.add('active');
+          modeExecBtn.classList.remove('active');
+        }
+        if (orbitChipSub) orbitChipSub.textContent = 'AI & Data Specialist';
+        if (orbitChipTag) orbitChipTag.textContent = 'AI TECH ACTIVE';
+        if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'AI Tech Active';
+
+        requestAnimationFrame(updateCardTilt);
       });
 
-      // 3. Dynamic Motion Avatar: Mouse Overlay Tech Style, 3D Tilt, Glare & Mode Switch
-      const avatarCard = document.getElementById('avatarCard');
-      const avatarGlare = document.getElementById('avatarGlare');
-      const modeExecBtn = document.getElementById('modeExecutiveBtn');
-      const modeAugBtn = document.getElementById('modeAugmentedBtn');
-      const orbitChipSub = document.getElementById('orbitChipSub');
-      const orbitChipTag = document.getElementById('orbitChipTag');
-      const modeBadgeLiveText = document.getElementById('modeBadgeLiveText');
+      avatarCard.addEventListener('mousemove', (e) => {
+        const rect = avatarCard.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
 
-      if (avatarCard) {
-        let isHovering = false;
-        let targetRotX = 0;
-        let targetRotY = 0;
-        let currentRotX = 0;
-        let currentRotY = 0;
-        let manualMode = 'exec'; // 'exec' or 'augmented'
+        targetRotY = ((x - centerX) / centerX) * 12; // tilt left/right
+        targetRotX = -((y - centerY) / centerY) * 12; // tilt up/down
 
-        function updateCardTilt() {
-          if (isHovering) {
-            currentRotX += (targetRotX - currentRotX) * 0.15;
-            currentRotY += (targetRotY - currentRotY) * 0.15;
-            avatarCard.style.transform = "perspective(1000px) rotateX(" + currentRotX.toFixed(2) + "deg) rotateY(" + currentRotY.toFixed(2) + "deg) scale3d(1.025, 1.025, 1.025)";
-            requestAnimationFrame(updateCardTilt);
+        // Position glare
+        const percentX = (x / rect.width) * 100;
+        const percentY = (y / rect.height) * 100;
+        if (avatarGlare) {
+          avatarGlare.style.setProperty('--mouse-x', percentX + '%');
+          avatarGlare.style.setProperty('--mouse-y', percentY + '%');
+        }
+      });
+
+      avatarCard.addEventListener('mouseleave', () => {
+        isHovering = false;
+        targetRotX = 0;
+        targetRotY = 0;
+        avatarCard.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        avatarCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+
+        // Revert to manual mode state on mouseleave
+        if (manualMode === 'exec') {
+          if (modeExecBtn && modeAugBtn) {
+            modeExecBtn.classList.add('active');
+            modeAugBtn.classList.remove('active');
           }
+          if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
+          if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
+          if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Hover for Tech';
         }
 
-        // Mouse Overlay triggers Tech Mode Transition
-        avatarCard.addEventListener('mouseenter', () => {
-          isHovering = true;
-          avatarCard.style.animation = 'none'; // pause idle float on hover
+        setTimeout(() => {
+          avatarCard.style.transition = '';
+          avatarCard.style.animation = 'avatarHoverFloat 5.5s ease-in-out infinite alternate';
+        }, 600);
+      });
 
-          // Switch buttons & labels to AI Tech
-          if (modeAugBtn && modeExecBtn) {
-            modeAugBtn.classList.add('active');
-            modeExecBtn.classList.remove('active');
-          }
+      // Manual Mode Switcher Controls
+      if (modeExecBtn && modeAugBtn) {
+        modeExecBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          manualMode = 'exec';
+          modeExecBtn.classList.add('active');
+          modeAugBtn.classList.remove('active');
+          avatarCard.classList.remove('mode-augmented');
+          if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
+          if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
+          if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Executive Active';
+        });
+
+        modeAugBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          manualMode = 'augmented';
+          modeAugBtn.classList.add('active');
+          modeExecBtn.classList.remove('active');
+          avatarCard.classList.add('mode-augmented');
           if (orbitChipSub) orbitChipSub.textContent = 'AI & Data Specialist';
           if (orbitChipTag) orbitChipTag.textContent = 'AI TECH ACTIVE';
           if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'AI Tech Active';
-
-          requestAnimationFrame(updateCardTilt);
         });
-
-        avatarCard.addEventListener('mousemove', (e) => {
-          const rect = avatarCard.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-
-          targetRotY = ((x - centerX) / centerX) * 12; // tilt left/right
-          targetRotX = -((y - centerY) / centerY) * 12; // tilt up/down
-
-          // Position glare
-          const percentX = (x / rect.width) * 100;
-          const percentY = (y / rect.height) * 100;
-          if (avatarGlare) {
-            avatarGlare.style.setProperty('--mouse-x', percentX + '%');
-            avatarGlare.style.setProperty('--mouse-y', percentY + '%');
-          }
-        });
-
-        avatarCard.addEventListener('mouseleave', () => {
-          isHovering = false;
-          targetRotX = 0;
-          targetRotY = 0;
-          avatarCard.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
-          avatarCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-
-          // Revert to manual mode state on mouseleave
-          if (manualMode === 'exec') {
-            if (modeExecBtn && modeAugBtn) {
-              modeExecBtn.classList.add('active');
-              modeAugBtn.classList.remove('active');
-            }
-            if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
-            if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
-            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Hover for Tech';
-          }
-
-          setTimeout(() => {
-            avatarCard.style.transition = '';
-            avatarCard.style.animation = 'avatarHoverFloat 5.5s ease-in-out infinite alternate';
-          }, 600);
-        });
-
-        // Manual Mode Switcher Controls
-        if (modeExecBtn && modeAugBtn) {
-          modeExecBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            manualMode = 'exec';
-            modeExecBtn.classList.add('active');
-            modeAugBtn.classList.remove('active');
-            avatarCard.classList.remove('mode-augmented');
-            if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
-            if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
-            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Executive Active';
-          });
-
-          modeAugBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            manualMode = 'augmented';
-            modeAugBtn.classList.add('active');
-            modeExecBtn.classList.remove('active');
-            avatarCard.classList.add('mode-augmented');
-            if (orbitChipSub) orbitChipSub.textContent = 'AI & Data Specialist';
-            if (orbitChipTag) orbitChipTag.textContent = 'AI TECH ACTIVE';
-            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'AI Tech Active';
-          });
-        }
       }
+    }
 
-      // 4. Centered Floating Notification: Appears when scrolling to "Professional Experience"
-      const scrollNotifWrapper = document.getElementById('scrollNotifWrapper');
-      const expSection = document.getElementById('experience');
-      const contactSection = document.getElementById('contact');
+    // 4. Centered Floating Notification: Appears when scrolling to "Professional Experience"
+    const scrollNotifWrapper = document.getElementById('scrollNotifWrapper');
+    const expSection = document.getElementById('experience');
+    const contactSection = document.getElementById('contact');
 
-      function handleScrollNotification() {
-        if (!expSection || !scrollNotifWrapper) return;
-        const expRect = expSection.getBoundingClientRect();
-        const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
+    function handleScrollNotification() {
+      if (!expSection || !scrollNotifWrapper) return;
+      const expRect = expSection.getBoundingClientRect();
+      const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
 
-        // Appears when user scrolls into the "Professional Experience" section
-        const isAtExperience = expRect.top <= (window.innerHeight * 0.7);
-        // Hides if user reaches the contact section so it doesn't overlap contact channels
-        const isPastContact = contactRect && (contactRect.top <= (window.innerHeight * 0.4));
+      // Appears when user scrolls into the "Professional Experience" section
+      const isAtExperience = expRect.top <= (window.innerHeight * 0.7);
+      // Hides if user reaches the contact section so it doesn't overlap contact channels
+      const isPastContact = contactRect && (contactRect.top <= (window.innerHeight * 0.4));
 
-        if (isAtExperience && !isPastContact) {
-          scrollNotifWrapper.classList.add('is-visible');
-          scrollNotifWrapper.setAttribute('aria-hidden', 'false');
-        } else {
-          scrollNotifWrapper.classList.remove('is-visible');
-          scrollNotifWrapper.setAttribute('aria-hidden', 'true');
-        }
+      if (isAtExperience && !isPastContact) {
+        scrollNotifWrapper.classList.add('is-visible');
+        scrollNotifWrapper.setAttribute('aria-hidden', 'false');
+      } else {
+        scrollNotifWrapper.classList.remove('is-visible');
+        scrollNotifWrapper.setAttribute('aria-hidden', 'true');
       }
+    }
 
-      window.addEventListener('scroll', handleScrollNotification, { passive: true });
-      handleScrollNotification();
+    window.addEventListener('scroll', handleScrollNotification, { passive: true });
+    handleScrollNotification();
 
-      // 5. Gallery Category Filter Tabs
-      const filterButtons = document.querySelectorAll('.gallery-filter-btn');
-      const galleryItems = document.querySelectorAll('.gallery-item');
+    // 5. Gallery Category Filter Tabs
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
 
-      filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-          const filter = btn.getAttribute('data-filter');
-          galleryItems.forEach(item => {
-            const category = item.getAttribute('data-category');
-            if (filter === 'all' || category === filter) {
-              item.style.display = 'flex';
-            } else {
-              item.style.display = 'none';
-            }
-          });
+        const filter = btn.getAttribute('data-filter');
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
         });
       });
+    });
 
-      // 6. High-Resolution Lightbox Modal
-      const lightboxModal = document.getElementById('lightbox-modal');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxTitle = document.getElementById('lightbox-title');
-      const lightboxDesc = document.getElementById('lightbox-desc');
-      const lightboxClose = document.getElementById('lightbox-close-btn');
+    // 6. High-Resolution Lightbox Modal
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+    const lightboxClose = document.getElementById('lightbox-close-btn');
 
-      function openLightbox(item) {
-        const src = item.getAttribute('data-src');
-        const title = item.getAttribute('data-title');
-        const desc = item.getAttribute('data-desc');
+    function openLightbox(item) {
+      const src = item.getAttribute('data-src');
+      const title = item.getAttribute('data-title');
+      const desc = item.getAttribute('data-desc');
 
-        if (lightboxImg) lightboxImg.src = src;
-        if (lightboxTitle) lightboxTitle.innerHTML = title;
-        if (lightboxDesc) lightboxDesc.textContent = desc;
+      if (lightboxImg) lightboxImg.src = src;
+      if (lightboxTitle) lightboxTitle.innerHTML = title;
+      if (lightboxDesc) lightboxDesc.textContent = desc;
 
-        if (lightboxModal) {
-          lightboxModal.classList.add('is-open');
-          lightboxModal.setAttribute('aria-hidden', 'false');
-          document.body.style.overflow = 'hidden';
-        }
+      if (lightboxModal) {
+        lightboxModal.classList.add('is-open');
+        lightboxModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
       }
+    }
 
-      galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openLightbox(item);
+      });
+
+      const pill = item.querySelector('.gallery-preview-pill');
+      if (pill) {
+        pill.setAttribute('role', 'button');
+        pill.setAttribute('aria-label', 'Enlarge ' + (item.getAttribute('data-title') || 'image'));
+        pill.addEventListener('click', (e) => {
+          e.stopPropagation();
           openLightbox(item);
         });
-
-        const pill = item.querySelector('.gallery-preview-pill');
-        if (pill) {
-          pill.setAttribute('role', 'button');
-          pill.setAttribute('aria-label', 'Enlarge ' + (item.getAttribute('data-title') || 'image'));
-          pill.addEventListener('click', (e) => {
-            e.stopPropagation();
-            openLightbox(item);
-          });
-        }
-      });
-
-      function closeLightbox() {
-        if (lightboxModal) {
-          lightboxModal.classList.remove('is-open');
-          lightboxModal.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
-        }
       }
+    });
 
-      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    function closeLightbox() {
       if (lightboxModal) {
-        lightboxModal.addEventListener('click', (e) => {
-          if (e.target === lightboxModal) closeLightbox();
-        });
+        lightboxModal.classList.remove('is-open');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
       }
+    }
 
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          closeLightbox();
-          closeDrawer();
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeDrawer();
+      }
+    });
+
+    // 7. Contact Section Email Copy Button
+    const copyButtons = document.querySelectorAll('.copy-email-btn');
+    copyButtons.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const textToCopy = btn.getAttribute('data-copy') || 'sornrambo@gmail.com';
+        const label = btn.querySelector('.copy-label');
+        try {
+          await navigator.clipboard.writeText(textToCopy);
+          btn.classList.add('is-copied');
+          if (label) label.textContent = 'Copied!';
+          setTimeout(() => {
+            btn.classList.remove('is-copied');
+            if (label) label.textContent = 'Copy';
+          }, 2000);
+        } catch (err) {
+          const textArea = document.createElement('textarea');
+          textArea.value = textToCopy;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          btn.classList.add('is-copied');
+          if (label) label.textContent = 'Copied!';
+          setTimeout(() => {
+            btn.classList.remove('is-copied');
+            if (label) label.textContent = 'Copy';
+          }, 2000);
         }
       });
-
-      // 7. Contact Section Email Copy Button
-      const copyButtons = document.querySelectorAll('.copy-email-btn');
-      copyButtons.forEach(btn => {
-        btn.addEventListener('click', async () => {
-          const textToCopy = btn.getAttribute('data-copy') || 'sornrambo@gmail.com';
-          const label = btn.querySelector('.copy-label');
-          try {
-            await navigator.clipboard.writeText(textToCopy);
-            btn.classList.add('is-copied');
-            if (label) label.textContent = 'Copied!';
-            setTimeout(() => {
-              btn.classList.remove('is-copied');
-              if (label) label.textContent = 'Copy';
-            }, 2000);
-          } catch (err) {
-            const textArea = document.createElement('textarea');
-            textArea.value = textToCopy;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            btn.classList.add('is-copied');
-            if (label) label.textContent = 'Copied!';
-            setTimeout(() => {
-              btn.classList.remove('is-copied');
-              if (label) label.textContent = 'Copy';
-            }, 2000);
-          }
-        });
-      });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
