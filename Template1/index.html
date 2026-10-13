@@ -1735,12 +1735,13 @@
     }
 
     /* ==========================================================================
-       Skills & Education Grid
+       Education & Skills Grid (Education Left, Skills Right)
        ========================================================================== */
     .skills-edu-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 0.95fr 1.15fr;
       gap: clamp(2rem, 4vw, 3.5rem);
+      align-items: start;
     }
 
     .skills-group-container {
@@ -3102,7 +3103,7 @@
       <!-- Clean 4-Item Navigation -->
       <div class="nav-menu-links" id="desktop-menu">
         <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills &amp; Education</a>
+        <a href="#skills" class="nav-link">Education &amp; Skills</a>
         <a href="#fieldwork" class="nav-link">Fieldwork</a>
         <a href="#certifications" class="nav-link">Certifications</a>
       </div>
@@ -3241,7 +3242,7 @@
           </svg>
         </a>
 
-        <!-- 3. Skills & Education -->
+        <!-- 3. Education & Skills -->
         <a href="#skills" class="drawer-nav-card drawer-nav-item">
           <div class="drawer-nav-icon-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
@@ -3251,7 +3252,7 @@
             </svg>
           </div>
           <div class="drawer-nav-meta">
-            <div class="drawer-nav-label">Skills &amp; Education</div>
+            <div class="drawer-nav-label">Education &amp; Skills</div>
             <div class="drawer-nav-hint">M.Sc. Data Science &amp; AI &bull; Lecturing</div>
           </div>
           <svg class="drawer-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
@@ -3666,18 +3667,49 @@
     </section>
 
     <!-- ========================================================================
-       Skills & Education Section
+       Education & Skills Section
        ======================================================================== -->
     <section id="skills">
       <div class="container">
-        <div class="section-eyebrow">&#10022; Technical Proficiencies &amp; Academic Degrees</div>
-        <h2 class="section-title">Skills &amp; Education</h2>
+        <div class="section-eyebrow">&#10022; Academic Degrees &amp; Technical Proficiencies</div>
+        <h2 class="section-title">Education &amp; Skills</h2>
         <p class="section-desc">
-          Specialized capabilities across modern data stacks, agile management, and formal university degrees.
+          Formal university degrees across data science, AI &amp; IT, alongside specialized enterprise technical capabilities.
         </p>
 
         <div class="skills-edu-grid">
-          <!-- Technical Skill Sets -->
+          <!-- Formal Education Degrees (Left Side) -->
+          <div class="edu-card-list">
+            <!-- 2024: M.Sc. Data Science & AI -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2024</div>
+              <h3 class="edu-degree-title">M.Sc. in Data Science and Artificial Intelligence</h3>
+              <div class="edu-institution">Asian Institute of Technology (AIT), Thailand</div>
+            </div>
+
+            <!-- 2017: B.Sc. IT -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2017</div>
+              <h3 class="edu-degree-title">B.Sc. in Information Technology</h3>
+              <div class="edu-institution">Build Bright University, Phnom Penh</div>
+            </div>
+
+            <!-- 2018: B.Ed. TEFL -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2018</div>
+              <h3 class="edu-degree-title">B.Ed. in Teaching English as a Foreign Language</h3>
+              <div class="edu-institution">Beltei International University, Phnom Penh</div>
+            </div>
+
+            <!-- 2013: High School -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2013</div>
+              <h3 class="edu-degree-title">National High School Diploma</h3>
+              <div class="edu-institution">Sok An Prey Sandek High School, Takeo</div>
+            </div>
+          </div>
+
+          <!-- Technical Skill Sets (Right Side) -->
           <div class="skills-group-container">
             <div class="skill-category-card">
               <div class="skill-cat-title">
@@ -3731,37 +3763,6 @@
                 <span class="skill-tag">Adobe Photoshop</span>
                 <span class="skill-tag">Digital Branding</span>
               </div>
-            </div>
-          </div>
-
-          <!-- Formal Education Degrees -->
-          <div class="edu-card-list">
-            <!-- 2024: M.Sc. Data Science & AI -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2024</div>
-              <h3 class="edu-degree-title">M.Sc. in Data Science and Artificial Intelligence</h3>
-              <div class="edu-institution">Asian Institute of Technology (AIT), Thailand</div>
-            </div>
-
-            <!-- 2017: B.Sc. IT -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2017</div>
-              <h3 class="edu-degree-title">B.Sc. in Information Technology</h3>
-              <div class="edu-institution">Build Bright University, Phnom Penh</div>
-            </div>
-
-            <!-- 2018: B.Ed. TEFL -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2018</div>
-              <h3 class="edu-degree-title">B.Ed. in Teaching English as a Foreign Language</h3>
-              <div class="edu-institution">Beltei International University, Phnom Penh</div>
-            </div>
-
-            <!-- 2013: High School -->
-            <div class="edu-card">
-              <div class="edu-year-badge">2013</div>
-              <h3 class="edu-degree-title">National High School Diploma</h3>
-              <div class="edu-institution">Sok An Prey Sandek High School, Takeo</div>
             </div>
           </div>
         </div>
@@ -4393,7 +4394,7 @@
           <span class="bottom-nav-label">Experience</span>
         </a>
 
-        <a href="#skills" class="bottom-nav-item" data-section="skills" aria-label="Skills & Education">
+        <a href="#skills" class="bottom-nav-item" data-section="skills" aria-label="Education &amp; Skills">
           <div class="bottom-nav-icon-wrap">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
               <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -4401,7 +4402,7 @@
               <path d="M2 12l10 5 10-5" />
             </svg>
           </div>
-          <span class="bottom-nav-label">Skills</span>
+          <span class="bottom-nav-label">Edu &amp; Skills</span>
         </a>
 
         <a href="#certifications" class="bottom-nav-item" data-section="certifications" aria-label="Certifications">
