@@ -1,0 +1,17 @@
+{
+  "name": "Rambo SORN — Senior Business Analyst, Data Analyst & Educator",
+  "short_name": "Rambo SORN",
+  "description": "Executive portfolio of Rambo SORN, M.Sc. Data Science & AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08080a",
+  "theme_color": "#08080a",
+  "icons": [
+    {
+      "src": "/Template2/1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

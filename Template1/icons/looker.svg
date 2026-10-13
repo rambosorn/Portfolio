@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="looker-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#805AD5"/>
+      <stop offset="100%" stop-color="#5A67D8"/>
+    </linearGradient>
+  </defs>
+  <!-- Looker Outer Ring with Lower Handle -->
+  <circle cx="68" cy="52" r="32" fill="none" stroke="url(#looker-grad)" stroke-width="14"/>
+  <!-- Stem extending from bottom-left of the circle -->
+  <path d="M44 74 L24 104" stroke="url(#looker-grad)" stroke-width="14" stroke-linecap="round"/>
+  <!-- Center Dot -->
+  <circle cx="68" cy="52" r="10" fill="url(#looker-grad)"/>
+</svg>

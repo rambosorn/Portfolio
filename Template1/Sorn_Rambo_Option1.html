@@ -1,0 +1,4231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SORN RAMBO — Senior Business Analyst &amp; University Lecturer</title>
+  <meta name="description"
+    content="Official portfolio of Sorn Rambo: Senior Business Analyst at Kampot Cement Co., Ltd. (2019–Present) and Part-Time Lecturer at PPIU and UTE. M.Sc. Data Science &amp; AI (AIT Thailand)." />
+  <meta name="keywords"
+    content="Sorn Rambo, Senior Business Analyst, Kampot Cement Co. Ltd., PPIU Lecturer, UTE Lecturer, AIT Data Science, AI Adoption, Business Intelligence, CRM Value Chain, Agile Scrum, Phnom Penh Cambodia" />
+
+  <meta property="og:title" content="SORN RAMBO — Senior Business Analyst &amp; University Lecturer" />
+  <meta property="og:description"
+    content="Senior Business Analyst at Kampot Cement Co., Ltd. (since 2019) and Part-Time Lecturer at PPIU &amp; UTE. M.Sc. in Data Science &amp; AI from Asian Institute of Technology (AIT)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://linkedin.com/in/rambosorn" />
+  <meta name="theme-color" content="#f8f7f4" />
+
+  <!-- Theme Initialization (Prevents Flash) -->
+  <script>
+    (function () {
+      const saved = localStorage.getItem('rambo_theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <!-- Google Fonts: Onest -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       Design System & CSS Custom Properties
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f8f7f4;
+      --bg-alt: #f0eee9;
+      --surface: #ffffff;
+      --surface-glass: rgba(255, 255, 255, 0.78);
+      --surface-glass-card: rgba(255, 255, 255, 0.88);
+      --glass-border: rgba(255, 255, 255, 0.92);
+      --glass-border-subtle: rgba(20, 20, 20, 0.08);
+      --glass-shadow: 0 16px 36px -12px rgba(18, 18, 18, 0.07), 0 1px 3px rgba(18, 18, 18, 0.04);
+      --glass-shadow-hover: 0 24px 48px -12px rgba(18, 18, 18, 0.14), 0 2px 6px rgba(18, 18, 18, 0.06);
+
+      --ink: #111111;
+      --ink-secondary: #3c4043;
+      --muted: #666c75;
+      --subtle: #9aa0a6;
+      --line: #e3e1db;
+
+      --accent: #b15f2c;
+      --accent-hover: #97501f;
+      --accent-soft: rgba(177, 95, 44, 0.1);
+      --cyan-accent: #0284c7;
+      --emerald-accent: #10b981;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      --max-w: 1240px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0d0e12;
+      --bg-alt: #13141b;
+      --surface: #181922;
+      --surface-glass: rgba(22, 24, 32, 0.85);
+      --surface-glass-card: rgba(24, 26, 36, 0.9);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --glass-border-subtle: rgba(255, 255, 255, 0.08);
+      --glass-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+      --glass-shadow-hover: 0 24px 48px -12px rgba(0, 0, 0, 0.7), 0 2px 6px rgba(0, 0, 0, 0.4);
+
+      --ink: #f4f5f8;
+      --ink-secondary: #c9ccd6;
+      --muted: #9ba0ad;
+      --subtle: #6c7280;
+      --line: #262835;
+
+      --accent: #d97706;
+      --accent-hover: #b45309;
+      --accent-soft: rgba(217, 119, 6, 0.18);
+      --cyan-accent: #38bdf8;
+      --emerald-accent: #34d399;
+    }
+
+
+    html {
+      font-size: clamp(14.5px, 0.95vw + 3px, 16px);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    body {
+      font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: clamp(1.25rem, 3.5vw, 2.5rem);
+      padding-right: clamp(1.25rem, 3.5vw, 2.5rem);
+    }
+
+    /* Ambient Dynamic Mesh Background */
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(177, 95, 44, 0.04) 0%, transparent 45%),
+        radial-gradient(circle at 88% 22%, rgba(2, 132, 199, 0.035) 0%, transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(177, 95, 44, 0.03) 0%, transparent 50%),
+        var(--bg);
+    }
+
+    /* ==========================================================================
+       Streamlined Glassmorphism Navigation Bar
+       ========================================================================== */
+    .navbar-wrapper {
+      position: fixed;
+      top: 1rem;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      padding: 0 1rem;
+      pointer-events: none;
+    }
+
+    .navbar {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: var(--max-w);
+      padding: 0.6rem 1rem 0.6rem 1.4rem;
+      background: var(--surface-glass);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-full);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s ease;
+    }
+
+    .navbar:hover {
+      box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.04);
+      border-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .nav-brand-spark {
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    .nav-menu-links {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .nav-link {
+      padding: 0.45rem 0.95rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      border-radius: var(--radius-full);
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-link:hover {
+      color: var(--ink);
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-right-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .live-clock-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.85rem;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .live-clock-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--emerald-accent);
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.85);
+      }
+    }
+
+    .nav-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.5rem 1.15rem;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-cta-btn:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(177, 95, 44, 0.25);
+    }
+
+    .nav-hamburger-btn {
+      display: none;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--ink);
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(10, 10, 12, 0.5);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-drawer.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-drawer-sheet {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(320px, 85vw);
+      background: #ffffff;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .mobile-drawer.is-open .mobile-drawer-sheet {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-drawer-close {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink);
+    }
+
+    .mobile-drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .mobile-drawer-link {
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      color: var(--ink-secondary);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .mobile-drawer-link:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--ink);
+    }
+
+    /* ==========================================================================
+       Hero Section
+       ========================================================================== */
+    .hero-section {
+      padding-top: clamp(6.5rem, 12vw, 8.5rem);
+      padding-bottom: clamp(3.5rem, 7vw, 5rem);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: clamp(2.5rem, 5vw, 4.5rem);
+      align-items: center;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--ink-secondary);
+    }
+
+    .pill-badge.company {
+      background: rgba(177, 95, 44, 0.08);
+      border-color: rgba(177, 95, 44, 0.2);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .pill-badge.accent {
+      background: rgba(2, 132, 199, 0.08);
+      border-color: rgba(2, 132, 199, 0.2);
+      color: var(--cyan-accent);
+      font-weight: 700;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title-highlight {
+      background: linear-gradient(135deg, var(--accent) 0%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+      line-height: 1.65;
+      color: var(--ink-secondary);
+      max-width: 580px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.75rem;
+      background: var(--ink);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(177, 95, 44, 0.3);
+    }
+
+    .btn-glass {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.65rem;
+      background: var(--surface-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: var(--radius-full);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-glass:hover {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .hero-channels-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .channel-chip {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .channel-chip:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(177, 95, 44, 0.18);
+    }
+
+    /* ==========================================================================
+       DYNAMIC MOTION AVATAR COMPONENT (Mouse Overlay & Tech Mode Switch)
+       ========================================================================== */
+    .avatar-motion-stage {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Ambient Dynamic Radial Halo Glow */
+    .avatar-ambient-glow {
+      position: absolute;
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(177, 95, 44, 0.18) 0%, rgba(2, 132, 199, 0.12) 45%, transparent 70%);
+      filter: blur(40px);
+      z-index: 0;
+      animation: ambientPulse 6s ease-in-out infinite alternate;
+      pointer-events: none;
+      transition: all 0.5s ease;
+    }
+
+    .avatar-3d-card:hover~.avatar-ambient-glow,
+    .avatar-3d-card.mode-augmented~.avatar-ambient-glow {
+      background: radial-gradient(circle, rgba(2, 132, 199, 0.28) 0%, rgba(177, 95, 44, 0.16) 50%, transparent 70%);
+      filter: blur(48px);
+    }
+
+    @keyframes ambientPulse {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.6;
+      }
+
+      100% {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+
+    /* 3D Card with Gyroscope & Parallax Depth */
+    .avatar-3d-card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 440px;
+      aspect-ratio: 4 / 5;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: #11141a;
+      box-shadow: 0 24px 55px -15px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.85);
+      transform-style: preserve-3d;
+      will-change: transform;
+      animation: avatarHoverFloat 5.5s ease-in-out infinite alternate;
+      cursor: crosshair;
+      transition: border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .avatar-3d-card:hover {
+      box-shadow: 0 32px 65px -15px rgba(2, 132, 199, 0.28), 0 0 0 1.5px rgba(2, 132, 199, 0.5);
+    }
+
+    @keyframes avatarHoverFloat {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-8px) rotate(0.4deg);
+      }
+    }
+
+    /* Cybernetic HUD Corner Brackets that illuminate on hover */
+    .avatar-hud-bracket {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: rgba(2, 132, 199, 0.9);
+      z-index: 12;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.35s ease;
+    }
+
+    .avatar-hud-bracket.top-left {
+      top: 14px;
+      left: 14px;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      transform: translate(-4px, -4px);
+    }
+
+    .avatar-hud-bracket.top-right {
+      top: 14px;
+      right: 14px;
+      border-top: 2px solid;
+      border-right: 2px solid;
+      transform: translate(4px, -4px);
+    }
+
+    .avatar-hud-bracket.bottom-left {
+      bottom: 14px;
+      left: 14px;
+      border-bottom: 2px solid;
+      border-left: 2px solid;
+      transform: translate(-4px, 4px);
+    }
+
+    .avatar-hud-bracket.bottom-right {
+      bottom: 14px;
+      right: 14px;
+      border-bottom: 2px solid;
+      border-right: 2px solid;
+      transform: translate(4px, 4px);
+    }
+
+    .avatar-3d-card:hover .avatar-hud-bracket,
+    .avatar-3d-card.mode-augmented .avatar-hud-bracket {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    /* Holographic Specular Glare Overlay */
+    .avatar-glare-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.28) 0%, rgba(2, 132, 199, 0.12) 30%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      mix-blend-mode: overlay;
+    }
+
+    .avatar-3d-card:hover .avatar-glare-overlay {
+      opacity: 1;
+    }
+
+    /* Cybernetic Scanline Beam */
+    .avatar-scan-line {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+      height: 35%;
+      background: linear-gradient(180deg, transparent 0%, rgba(2, 132, 199, 0.22) 50%, rgba(255, 255, 255, 0.5) 100%);
+      z-index: 6;
+      pointer-events: none;
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+
+    .avatar-3d-card:hover .avatar-scan-line {
+      opacity: 1;
+      animation: laserSweep 2.2s linear infinite;
+    }
+
+    @keyframes laserSweep {
+      0% {
+        top: -40%;
+      }
+
+      100% {
+        top: 120%;
+      }
+    }
+
+    /* Avatar Image Layers: Executive (1.png) and Tech Style (2.png) */
+    .avatar-img-layer {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      pointer-events: none;
+      transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), filter 0.55s ease;
+    }
+
+    .avatar-img-layer.base {
+      opacity: 1;
+      transform: translateX(-50%) scale(1) translateZ(30px);
+      filter: saturate(102%) contrast(102%);
+    }
+
+    .avatar-img-layer.augmented {
+      opacity: 0;
+      transform: translateX(-50%) scale(1.02) translateZ(45px);
+      filter: contrast(106%) brightness(102%);
+    }
+
+    /* MOUSE OVERLAY EFFECT: Hovering automatically reveals Tech Style avatar */
+    .avatar-3d-card:hover .avatar-img-layer.base {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.97) translateZ(20px);
+    }
+
+    .avatar-3d-card:hover .avatar-img-layer.augmented {
+      opacity: 1;
+      transform: translateX(-50%) scale(1) translateZ(45px);
+    }
+
+    /* When clicked mode-augmented is toggled */
+    .avatar-3d-card.mode-augmented .avatar-img-layer.base {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.97) translateZ(20px);
+    }
+
+    .avatar-3d-card.mode-augmented .avatar-img-layer.augmented {
+      opacity: 1;
+      transform: translateX(-50%) scale(1) translateZ(45px);
+    }
+
+    /* Top Mode Toggle Bar */
+    .avatar-mode-bar {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      right: 1rem;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: auto;
+    }
+
+    .mode-pill-toggle {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    .mode-option-btn {
+      padding: 0.3rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      color: var(--muted);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .mode-option-btn.active {
+      background: var(--ink);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .mode-badge-live {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #059669;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .avatar-3d-card:hover .mode-badge-live,
+    .avatar-3d-card.mode-augmented .mode-badge-live {
+      color: #0284c7;
+      border-color: rgba(2, 132, 199, 0.3);
+    }
+
+    .avatar-orbit-chip {
+      position: absolute;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1rem;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      transform: translateZ(50px);
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    .avatar-orbit-chip.bottom-card {
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .orbit-chip-main {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .orbit-chip-sub {
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--accent);
+      transition: color 0.3s ease;
+    }
+
+    .orbit-chip-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #1a273b;
+      background: rgba(26, 39, 59, 0.07);
+      padding: 0.25rem 0.55rem;
+      border-radius: var(--radius-full);
+      transition: all 0.3s ease;
+    }
+
+    .avatar-3d-card:hover .orbit-chip-sub,
+    .avatar-3d-card.mode-augmented .orbit-chip-sub {
+      color: #0284c7;
+    }
+
+    .avatar-3d-card:hover .orbit-chip-tag,
+    .avatar-3d-card.mode-augmented .orbit-chip-tag {
+      background: rgba(2, 132, 199, 0.15);
+      color: #0284c7;
+      box-shadow: 0 0 10px rgba(2, 132, 199, 0.25);
+    }
+
+    /* ==========================================================================
+       Section Utilities & Headers
+       ========================================================================== */
+    section {
+      padding-top: clamp(3.5rem, 7vw, 5.5rem);
+      padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+      position: relative;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1.18;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 680px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ==========================================================================
+       About Section
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: clamp(2rem, 4vw, 3.5rem);
+      align-items: start;
+    }
+
+    .about-meta-card {
+      background: var(--surface-glass-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .about-meta-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .about-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .about-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .meta-item-label {
+      font-size: 0.75rem;
+      color: var(--subtle);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .meta-item-val {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .meta-item-val.highlight {
+      color: var(--accent);
+    }
+
+    .about-story-text {
+      font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-story-p {
+      font-size: 0.98rem;
+      color: var(--ink-secondary);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .metric-stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .metric-stat-box {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1rem;
+      text-align: center;
+      transition: transform 0.25s ease;
+    }
+
+    .metric-stat-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .metric-number {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1.1;
+      margin-bottom: 0.25rem;
+    }
+
+    .metric-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    /* ==========================================================================
+       Experience Section (Kampot Cement Co., Ltd. 2019–Present)
+       ========================================================================== */
+    .exp-header-bento {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(2rem, 3.5vw, 3.5rem);
+      align-items: center;
+      margin-bottom: 2.25rem;
+      position: relative;
+    }
+
+    .exp-header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .exp-eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(177, 95, 44, 0.1);
+      border: 1px solid rgba(177, 95, 44, 0.25);
+      border-radius: var(--radius-full);
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      width: fit-content;
+    }
+
+    .exp-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      animation: avatarPulse 2s infinite ease-in-out;
+    }
+
+    .exp-title-headline {
+      font-size: clamp(2.1rem, 3.2vw, 2.85rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .exp-title-accent {
+      background: linear-gradient(135deg, var(--accent) 0%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .exp-narrative-text {
+      font-size: 0.98rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .exp-tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .exp-tag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.32rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: var(--surface-glass);
+      border: 1px solid var(--glass-border-subtle);
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--ink-secondary);
+      transition: all 0.25s ease;
+    }
+
+    .exp-tag-pill:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+    /* Right: Metrics Bento Container */
+    .exp-metrics-bento {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      background: var(--surface-glass-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--glass-shadow);
+      position: relative;
+    }
+
+    .exp-metrics-bento::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0.7;
+    }
+
+    .bento-stat-card {
+      background: rgba(255, 255, 255, 0.45);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .bento-stat-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.85);
+      border-color: rgba(177, 95, 44, 0.35);
+      box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.12), 0 0 16px rgba(177, 95, 44, 0.15);
+    }
+
+    .bento-stat-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0.15rem;
+    }
+
+    .bento-stat-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(177, 95, 44, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(177, 95, 44, 0.22);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    .bento-stat-card:hover .bento-stat-icon-wrap {
+      transform: scale(1.08);
+    }
+
+    .bento-stat-val-group {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0.15rem;
+    }
+
+    .bento-stat-big {
+      font-size: 2.15rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .bento-stat-suffix {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .bento-stat-unit {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-left: 0.2rem;
+    }
+
+    .bento-stat-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.2rem;
+    }
+
+    .bento-stat-label {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .bento-stat-sub {
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .tenure-badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: rgba(177, 95, 44, 0.15);
+      border: 1px solid rgba(177, 95, 44, 0.25);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .company-tenure-banner {
+      background: linear-gradient(135deg, rgba(177, 95, 44, 0.08) 0%, rgba(26, 39, 59, 0.06) 100%);
+      border: 1px solid rgba(177, 95, 44, 0.2);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .tenure-banner-text {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .tenure-banner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--ink);
+      color: #ffffff;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      position: relative;
+    }
+
+    .timeline-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--glass-shadow);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .timeline-card:hover {
+      box-shadow: var(--glass-shadow-hover);
+      transform: translateY(-2px);
+      border-color: rgba(177, 95, 44, 0.25);
+    }
+
+    .timeline-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-role-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.015em;
+    }
+
+    .timeline-period-badge {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: var(--radius-full);
+      color: var(--muted);
+    }
+
+    .timeline-period-badge.current {
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+    }
+
+    .timeline-org {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .timeline-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .timeline-bullets li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+    }
+
+    .timeline-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* Earlier Career Teaching Summary */
+    .earlier-career-strip {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .earlier-career-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .earlier-career-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .earlier-career-item {
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+      line-height: 1.5;
+    }
+
+    .earlier-career-item strong {
+      color: var(--ink);
+    }
+
+    /* ==========================================================================
+       Skills & Education Grid
+       ========================================================================== */
+    .skills-edu-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(2rem, 4vw, 3.5rem);
+    }
+
+    .skills-group-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .skill-category-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--glass-shadow);
+      transition: transform 0.25s ease;
+    }
+
+    .skill-category-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glass-shadow-hover);
+    }
+
+    .skill-cat-title {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      padding: 0.4rem 0.85rem;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      transition: all 0.2s ease;
+    }
+
+    .skill-tag:hover {
+      background: var(--ink);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .edu-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .edu-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--glass-shadow);
+      position: relative;
+      transition: transform 0.25s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glass-shadow-hover);
+    }
+
+    .edu-year-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .edu-degree-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+    }
+
+    .edu-institution {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    /* ==========================================================================
+       ACTUATED FIELDWORK & WORKSHOP GALLERY
+       ========================================================================== */
+    .gallery-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-filter-btn {
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      background: var(--surface-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .gallery-filter-btn:hover {
+      color: var(--ink);
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-filter-btn.active {
+      background: var(--ink);
+      color: #ffffff;
+      border-color: var(--ink);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-filter-count {
+      font-size: 0.72rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .gallery-filter-btn:not(.active) .gallery-filter-count {
+      background: rgba(0, 0, 0, 0.06);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.75rem;
+    }
+
+    /* Actuated Gallery Card with Hardware-Accelerated Motion */
+    .gallery-item {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--glass-border-subtle);
+      overflow: hidden;
+      box-shadow: var(--glass-shadow);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 48px -12px rgba(18, 18, 18, 0.16);
+      border-color: rgba(177, 95, 44, 0.3);
+    }
+
+    .gallery-thumb-wrap {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      background: #111418;
+    }
+
+    .gallery-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+    }
+
+    .gallery-item:hover .gallery-thumb {
+      transform: scale(1.06);
+    }
+
+    /* Actuated sheen sweep across photo on hover */
+    .gallery-thumb-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.75s ease;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .gallery-item:hover .gallery-thumb-wrap::after {
+      left: 140%;
+    }
+
+    /* Actuated overlay gradient tint */
+    .gallery-thumb-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.45) 100%);
+      opacity: 0.7;
+      transition: opacity 0.35s ease;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .gallery-item:hover .gallery-thumb-wrap::before {
+      opacity: 0.85;
+    }
+
+    /* Actuated badge motion */
+    .gallery-overlay-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 3;
+      padding: 0.35rem 0.75rem;
+      background: rgba(18, 20, 24, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #ffffff;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay-badge {
+      transform: translateY(-2px);
+      background: rgba(177, 95, 44, 0.95);
+    }
+
+    /* Floating preview action pill that slides up on hover */
+    .gallery-preview-pill {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.42rem 0.85rem;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #111111;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      pointer-events: auto;
+      user-select: none;
+    }
+
+    .gallery-preview-pill svg {
+      width: 13px;
+      height: 13px;
+      color: #111111;
+      stroke: currentColor;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-preview-pill span {
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: #111111;
+    }
+
+    .gallery-item:hover .gallery-preview-pill {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-preview-pill:hover {
+      background: var(--accent);
+      color: #ffffff !important;
+      border-color: var(--accent);
+      box-shadow: 0 6px 18px rgba(177, 95, 44, 0.4);
+      transform: translateY(-2px) scale(1.05);
+    }
+
+    .gallery-preview-pill:hover svg {
+      color: #ffffff !important;
+      transform: scale(1.18);
+    }
+
+    .gallery-preview-pill:hover span {
+      color: #ffffff !important;
+    }
+
+    .gallery-info {
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .gallery-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+
+    .gallery-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Certifications & Honors
+       ========================================================================== */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .cert-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      box-shadow: var(--glass-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--glass-shadow-hover);
+      border-color: rgba(177, 95, 44, 0.2);
+    }
+
+    .cert-issuer {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .cert-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .cert-id-badge {
+      font-size: 0.75rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--muted);
+      background: rgba(0, 0, 0, 0.03);
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      word-break: break-all;
+    }
+
+    /* ==========================================================================
+       Contact Section — Redesigned Executive Channels Hub
+       ========================================================================== */
+    .contact-section-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .contact-header-block {
+      text-align: center;
+      max-width: 960px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.38rem 0.95rem;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #059669;
+      margin-bottom: 1.35rem;
+      letter-spacing: 0.01em;
+    }
+
+    [data-theme="dark"] .contact-status-chip {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.35);
+      color: #34d399;
+    }
+
+    .status-pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulseGreen 2s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .contact-title {
+      font-size: clamp(2rem, 3.4vw, 3.1rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 1.15rem;
+    }
+
+    @media (min-width: 860px) {
+      .contact-title {
+        white-space: nowrap;
+      }
+    }
+
+    .contact-title-accent {
+      background: linear-gradient(135deg, var(--accent) 0%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .contact-lead {
+      font-size: 1.05rem;
+      color: var(--ink-secondary);
+      line-height: 1.65;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .contact-lead-line {
+      display: inline;
+    }
+
+    @media (min-width: 860px) {
+      .contact-lead-line {
+        display: block;
+      }
+    }
+
+    /* 3-Channel Bento Cards Grid */
+    .contact-channels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      .contact-channels-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-channel-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem 1.85rem 2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.28s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .contact-channel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
+    }
+
+    [data-theme="dark"] .contact-channel-card {
+      background: rgba(22, 25, 33, 0.85);
+      border-color: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    [data-theme="dark"] .contact-channel-card:hover {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+      border-color: rgba(199, 111, 70, 0.5);
+    }
+
+    /* Channel Header */
+    .channel-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .channel-icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .channel-icon-box svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .contact-channel-card:hover .channel-icon-box {
+      transform: scale(1.08);
+    }
+
+    .channel-icon-box.email-box {
+      background: rgba(199, 111, 70, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(199, 111, 70, 0.25);
+    }
+
+    .channel-icon-box.linkedin-box {
+      background: rgba(10, 102, 194, 0.12);
+      color: #0a66c2;
+      border: 1px solid rgba(10, 102, 194, 0.25);
+    }
+
+    .channel-icon-box.telegram-box {
+      background: rgba(36, 161, 222, 0.12);
+      color: #24a1de;
+      border: 1px solid rgba(36, 161, 222, 0.25);
+    }
+
+    [data-theme="dark"] .channel-icon-box.linkedin-box {
+      color: #70b5f9;
+    }
+
+    [data-theme="dark"] .channel-icon-box.telegram-box {
+      color: #40b3e8;
+    }
+
+    .channel-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.02em;
+    }
+
+    .channel-handle {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.85rem;
+      word-break: break-all;
+    }
+
+    .channel-desc {
+      font-size: 0.9rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+      margin-bottom: 1.75rem;
+      flex-grow: 1;
+    }
+
+    .channel-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: auto;
+    }
+
+    .channel-action-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .channel-action-btn.btn-main {
+      background: var(--ink);
+      color: var(--surface);
+      border: 1px solid transparent;
+    }
+
+    .channel-action-btn.btn-main:hover {
+      background: var(--accent);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    [data-theme="dark"] .channel-action-btn.btn-main {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    [data-theme="dark"] .channel-action-btn.btn-main:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .channel-action-btn.btn-copy {
+      flex: 0 0 auto;
+      padding: 0.75rem 0.95rem;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--glass-border-subtle);
+      color: var(--ink);
+    }
+
+    .channel-action-btn.btn-copy:hover {
+      background: rgba(0, 0, 0, 0.08);
+      color: var(--accent);
+    }
+
+    [data-theme="dark"] .channel-action-btn.btn-copy {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.1);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .channel-action-btn.btn-copy:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--accent);
+    }
+
+    .channel-action-btn.btn-copy.is-copied {
+      background: rgba(16, 185, 129, 0.15) !important;
+      border-color: rgba(16, 185, 129, 0.4) !important;
+      color: #10b981 !important;
+    }
+
+    .site-footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ==========================================================================
+       CENTERED FLOATING SCROLL NOTIFICATION ACTION ("notif-link w-inline-block")
+       (Matching reference design: Centered pill, discovery call label, Book a call button)
+       ========================================================================== */
+    .scroll-notif-wrapper {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(30px) scale(0.95);
+      z-index: 100;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      justify-content: center;
+      width: max-content;
+      max-width: calc(100vw - 2rem);
+    }
+
+    .scroll-notif-wrapper.is-visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .notif-link.w-inline-block {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      background: rgba(45, 43, 40, 0.82);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      box-shadow: 0 16px 42px -8px rgba(18, 18, 18, 0.32), 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 0.38rem 0.45rem 0.38rem 1.5rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .notif-link.w-inline-block:hover {
+      background: rgba(30, 28, 26, 0.94);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 24px 50px -8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.3);
+    }
+
+    .notif-pill-inner {
+      display: flex;
+      align-items: center;
+      gap: 1.35rem;
+    }
+
+    .notif-left-label {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.95);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .notif-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #ffffff;
+      color: #111111;
+      padding: 0.42rem 0.5rem 0.42rem 1.15rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+      transition: all 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .notif-link.w-inline-block:hover .notif-cta-btn {
+      background: #fbfbfa;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+    }
+
+    .notif-cta-text {
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #111111;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .notif-avatar-cluster {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 0.2rem;
+    }
+
+    .notif-avatar-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f97316 0%, #b15f2c 100%);
+      border: 1.5px solid #ffffff;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+    }
+
+    .notif-avatar-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .notif-avatar-crescent {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #111111;
+      margin-left: -13px;
+      z-index: 1;
+    }
+
+    /* ==========================================================================
+       Lightbox Modal
+       ========================================================================== */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: rgba(10, 10, 14, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox-modal.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 950px;
+      width: 100%;
+      background: #18181c;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-img {
+      width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      background: #0d0d10;
+    }
+
+    .lightbox-caption-bar {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      background: #18181c;
+      color: #ffffff;
+    }
+
+    .lightbox-caption-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .lightbox-caption-sub {
+      font-size: 0.82rem;
+      color: #9ca3af;
+      margin-top: 0.15rem;
+    }
+
+    .lightbox-close-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      transform: scale(1.08);
+    }
+
+    /* ==========================================================================
+       Responsive Media Queries
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-lead {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-ctas,
+      .hero-badge-row,
+      .hero-channels-row {
+        justify-content: center;
+      }
+
+      .avatar-motion-stage {
+        margin-top: 1.5rem;
+      }
+
+      .avatar-3d-card {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-grid,
+      .skills-edu-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .exp-header-bento {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .nav-menu-links {
+        display: none;
+      }
+
+      .nav-hamburger-btn {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .exp-metrics-bento {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1rem;
+      }
+
+      .metric-stats-row {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-preview-pill {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .certs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .live-clock-chip {
+        display: none;
+      }
+
+      .contact-buttons-row {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-glass {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .site-footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .scroll-notif-wrapper {
+        bottom: 1.25rem;
+        width: max-content;
+        max-width: calc(100vw - 1.5rem);
+      }
+
+      .notif-link.w-inline-block {
+        padding: 0.35rem 0.45rem 0.35rem 1.15rem;
+      }
+
+      .notif-pill-inner {
+        gap: 0.85rem;
+      }
+
+      .notif-left-label {
+        font-size: 0.82rem;
+      }
+
+      .notif-cta-text {
+        font-size: 0.74rem;
+      }
+    }
+
+    /* ==========================================================================
+       NIGHT MODE SYSTEM STYLES & THEME TOGGLE BUTTON
+       ========================================================================== */
+    .theme-toggle-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-shrink: 0;
+    }
+
+    .theme-toggle-btn:hover {
+      background: rgba(0, 0, 0, 0.08);
+      transform: rotate(15deg);
+    }
+
+    .sun-icon {
+      display: none;
+    }
+
+    .moon-icon {
+      display: block;
+    }
+
+    [data-theme="dark"] .sun-icon {
+      display: block;
+    }
+
+    [data-theme="dark"] .moon-icon {
+      display: none;
+    }
+
+    [data-theme="dark"] .theme-toggle-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.12);
+      color: #fbbf24;
+    }
+
+    [data-theme="dark"] .theme-toggle-btn:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: rotate(15deg);
+    }
+
+    /* Dark Mode Component Overrides */
+    [data-theme="dark"] .bg-mesh {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(217, 119, 6, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 88% 22%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(217, 119, 6, 0.04) 0%, transparent 50%),
+        var(--bg);
+    }
+
+    [data-theme="dark"] .navbar {
+      background: var(--surface-glass);
+      border-color: var(--glass-border);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+    }
+
+    [data-theme="dark"] .nav-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    [data-theme="dark"] .live-clock-chip {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+    }
+
+    [data-theme="dark"] .nav-cta-btn {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    [data-theme="dark"] .nav-cta-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .nav-hamburger-btn {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .mobile-drawer-sheet {
+      background: var(--surface);
+      color: var(--ink);
+      border-left: 1px solid var(--glass-border);
+    }
+
+    [data-theme="dark"] .mobile-drawer-close {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .mobile-drawer-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    [data-theme="dark"] .btn-primary {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    [data-theme="dark"] .btn-primary:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .btn-glass {
+      background: var(--surface-glass);
+      border-color: var(--glass-border);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .btn-glass:hover {
+      background: var(--surface);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    [data-theme="dark"] .channel-chip {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .channel-chip:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    [data-theme="dark"] .metric-stat-box {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    /* Dark Mode Bento Header & Metrics Hub */
+    [data-theme="dark"] .exp-eyebrow-pill {
+      background: rgba(217, 119, 6, 0.15);
+      border-color: rgba(217, 119, 6, 0.35);
+      color: #fbbf24;
+    }
+
+    [data-theme="dark"] .exp-pulse-dot {
+      background: #fbbf24;
+      box-shadow: 0 0 10px #fbbf24;
+    }
+
+    [data-theme="dark"] .exp-metrics-bento {
+      background: rgba(20, 22, 32, 0.85);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    [data-theme="dark"] .bento-stat-card {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    [data-theme="dark"] .bento-stat-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(217, 119, 6, 0.45);
+      box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.6), 0 0 20px rgba(217, 119, 6, 0.2);
+    }
+
+    [data-theme="dark"] .bento-stat-chip {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+    }
+
+    [data-theme="dark"] .tenure-badge-icon {
+      background: rgba(217, 119, 6, 0.18);
+      border-color: rgba(217, 119, 6, 0.35);
+      color: #fbbf24;
+    }
+
+    [data-theme="dark"] .company-tenure-banner {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.12) 0%, rgba(30, 41, 59, 0.25) 100%);
+      border-color: rgba(217, 119, 6, 0.35);
+    }
+
+    [data-theme="dark"] .tenure-banner-badge {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    [data-theme="dark"] .earlier-career-strip {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: var(--line);
+    }
+
+    [data-theme="dark"] .skill-tag {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.08);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .skill-tag:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    [data-theme="dark"] .gallery-filter-btn {
+      background: var(--surface-glass);
+      border-color: var(--glass-border);
+      color: var(--muted);
+    }
+
+    [data-theme="dark"] .gallery-filter-btn:hover {
+      background: var(--surface);
+      color: var(--ink);
+    }
+
+    [data-theme="dark"] .gallery-filter-btn.active {
+      background: #ffffff;
+      color: #111111;
+      border-color: #ffffff;
+    }
+
+    [data-theme="dark"] .gallery-filter-btn.active .gallery-filter-count {
+      background: rgba(0, 0, 0, 0.15);
+      color: #111111;
+    }
+
+    [data-theme="dark"] .gallery-filter-btn:not(.active) .gallery-filter-count {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--muted);
+    }
+
+    /* Night Mode Enlarge Action Pill - High Contrast & Glowing Accent Hover */
+    [data-theme="dark"] .gallery-preview-pill {
+      background: rgba(20, 22, 32, 0.94);
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65), 0 0 14px rgba(217, 119, 6, 0.25);
+    }
+
+    [data-theme="dark"] .gallery-preview-pill svg {
+      color: #ffffff !important;
+      stroke: #ffffff !important;
+    }
+
+    [data-theme="dark"] .gallery-preview-pill span {
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .gallery-preview-pill:hover {
+      background: var(--accent);
+      color: #ffffff !important;
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.5);
+      transform: translateY(-2px) scale(1.05);
+    }
+
+    [data-theme="dark"] .gallery-preview-pill:hover svg {
+      color: #ffffff !important;
+      stroke: #ffffff !important;
+      transform: scale(1.18);
+    }
+
+    [data-theme="dark"] .gallery-preview-pill:hover span {
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .cert-id-badge {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    [data-theme="dark"] .contact-card {
+      background: var(--surface);
+      border-color: var(--glass-border-subtle);
+    }
+
+    [data-theme="dark"] .mode-pill-toggle {
+      background: rgba(20, 22, 30, 0.88);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    [data-theme="dark"] .mode-option-btn.active {
+      background: #ffffff;
+      color: #111111;
+    }
+
+    [data-theme="dark"] .mode-badge-live {
+      background: rgba(20, 22, 30, 0.88);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    [data-theme="dark"] .avatar-orbit-chip {
+      background: rgba(20, 22, 30, 0.92);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    [data-theme="dark"] .orbit-chip-main {
+      color: var(--ink);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ambient Dynamic Mesh Background -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       Streamlined Glassy Navbar (5 Focused Links)
+       ======================================================================== -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" id="site-navbar" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Sorn Rambo Home">
+        <span class="nav-brand-spark">&#10022;</span>
+        <span>SORN RAMBO</span>
+      </a>
+
+      <!-- Clean 4-Item Navigation -->
+      <div class="nav-menu-links" id="desktop-menu">
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills &amp; Education</a>
+        <a href="#fieldwork" class="nav-link">Fieldwork</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+      </div>
+
+      <!-- Right Actions: Live Phnom Penh Time + Contact -->
+      <div class="nav-right-actions">
+        <div class="live-clock-chip" title="Phnom Penh Local Time (UTC+7)">
+          <span class="live-clock-dot"></span>
+          <span>Phnom Penh</span>
+          <span id="live-time-text">--:--</span>
+        </div>
+
+        <!-- Night Mode Switcher Button -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Night Mode" title="Toggle Night Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+            height="16">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+            height="16">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <a href="#contact" class="nav-cta-btn">
+          <span>Get in Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+
+        <button type="button" class="nav-hamburger-btn" id="drawer-open-btn" aria-label="Open mobile menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-sheet">
+      <div class="mobile-drawer-header">
+        <div class="nav-brand">
+          <span class="nav-brand-spark">&#10022;</span>
+          <span>SORN RAMBO</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <button type="button" class="theme-toggle-btn mobile-theme-btn" aria-label="Toggle Night Mode"
+            title="Toggle Night Mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+              height="16">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+              height="16">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button type="button" class="mobile-drawer-close" id="drawer-close-btn" aria-label="Close mobile menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-drawer-links">
+        <a href="#experience" class="mobile-drawer-link drawer-nav-item">Experience</a>
+        <a href="#skills" class="mobile-drawer-link drawer-nav-item">Skills &amp; Education</a>
+        <a href="#fieldwork" class="mobile-drawer-link drawer-nav-item">Fieldwork</a>
+        <a href="#certifications" class="mobile-drawer-link drawer-nav-item">Certifications</a>
+        <a href="#contact" class="mobile-drawer-link drawer-nav-item"
+          style="color:var(--accent); font-weight:700;">Get in Touch &rarr;</a>
+      </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+       Hero Section with Mouse Overlay Tech Style Avatar
+       ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Enterprise Systems, Data &amp; <span class="hero-title-highlight">Higher Education</span>
+            </h1>
+
+            <p class="hero-lead">
+              Senior Business Analyst at <strong>Kampot Cement Co., Ltd.</strong> (leading AI adoption, CRM value chains
+              &amp; platform digitalization since 2019) and Part-Time Lecturer at <strong>Phnom Penh International
+                University (PPIU)</strong> and <strong>UTE University of Technology and Entrepreneurship</strong>.
+              Master of Science in Data Science and Artificial Intelligence from the <strong>Asian Institute of
+                Technology (AIT)</strong>, Thailand.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#experience" class="btn-primary">
+                <span>View Experience</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="16" height="16">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer"
+                class="btn-glass">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+                </svg>
+                <span>Connect on LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="hero-channels-row">
+              <!-- Telegram -->
+              <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-chip"
+                title="Telegram @rambosorn" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
+                </svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:sornrambo@gmail.com" class="channel-chip" title="Email sornrambo@gmail.com"
+                aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- ================================================================
+             DYNAMIC MOTION AVATAR COMPONENT (Hover overlay switches to Tech Style)
+             ================================================================ -->
+          <div class="avatar-motion-stage">
+            <!-- Ambient Dynamic Radial Halo Glow -->
+            <div class="avatar-ambient-glow" aria-hidden="true"></div>
+
+            <!-- 3D Parallax Card -->
+            <div class="avatar-3d-card" id="avatarCard" title="Hover to reveal AI Tech Mode">
+              <!-- Cybernetic HUD Corner Brackets -->
+              <div class="avatar-hud-bracket top-left" aria-hidden="true"></div>
+              <div class="avatar-hud-bracket top-right" aria-hidden="true"></div>
+              <div class="avatar-hud-bracket bottom-left" aria-hidden="true"></div>
+              <div class="avatar-hud-bracket bottom-right" aria-hidden="true"></div>
+
+              <!-- Holographic Glare Overlay -->
+              <div class="avatar-glare-overlay" id="avatarGlare"></div>
+
+              <!-- Animated Laser Scan Beam on Hover -->
+              <div class="avatar-scan-line"></div>
+
+              <!-- Top Interactive Mode Toggle Bar -->
+              <div class="avatar-mode-bar">
+                <div class="mode-pill-toggle">
+                  <button type="button" class="mode-option-btn active" id="modeExecutiveBtn" title="Executive Portrait">
+                    <span>Executive</span>
+                  </button>
+                  <button type="button" class="mode-option-btn" id="modeAugmentedBtn" title="AI Tech Mode">
+                    <span>AI Tech</span>
+                  </button>
+                </div>
+
+                <div class="mode-badge-live">
+                  <span class="pill-dot" style="background:#10b981;"></span>
+                  <span id="modeBadgeLiveText">Hover for Tech</span>
+                </div>
+              </div>
+
+              <!-- Base Executive Portrait (1.png) -->
+              <img src="./1.png" alt="Sorn Rambo — Executive Portrait" class="avatar-img-layer base"
+                id="avatarBaseImg" />
+
+              <!-- Augmented Tech Layer (2.png) with Glowing HUD Overlays -->
+              <img src="./2.png" alt="Sorn Rambo — Augmented AI Tech Portrait" class="avatar-img-layer augmented"
+                id="avatarAugmentedImg" />
+
+              <!-- Bottom Floating Kinetic Summary Pill -->
+              <div class="avatar-orbit-chip bottom-card">
+                <div>
+                  <div class="orbit-chip-main">Sorn Rambo</div>
+                  <div class="orbit-chip-sub" id="orbitChipSub">Kampot Cement Co., Ltd.</div>
+                </div>
+                <div class="orbit-chip-tag" id="orbitChipTag">2019&ndash;Present</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       Experience Section (Kampot Cement Co., Ltd. 2019–Present)
+       ======================================================================== -->
+    <section id="experience" style="background:var(--bg-alt);">
+      <div class="container">
+        <!-- Modern Executive Career Header & Metrics Bento Hub -->
+        <div class="exp-header-bento">
+          <div class="exp-header-left">
+            <div class="exp-eyebrow-pill">
+              <span class="exp-pulse-dot"></span>
+              <span>Career Trajectory</span>
+            </div>
+            <h2 class="exp-title-headline">
+              Professional <span class="exp-title-accent">Experience</span>
+            </h2>
+            <p class="exp-narrative-text">
+              Spearheading enterprise AI adoption, CRM value chains, and platform digitalization at Kampot Cement Co., Ltd. since 2019, complemented by academic lecturing in Business Intelligence &amp; Data Systems.
+            </p>
+            <div class="exp-tags-row">
+              <div class="exp-tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
+                </svg>
+                <span>Kampot Cement (2019&ndash;Present)</span>
+              </div>
+              <div class="exp-tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+                <span>Lecturer @ PPIU &amp; UTE</span>
+              </div>
+              <div class="exp-tag-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20M2 12h20" />
+                </svg>
+                <span>Phnom Penh, Cambodia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 3-Tile Interactive Bento Stats Showcase -->
+          <div class="exp-metrics-bento">
+            <!-- Tile 1: Total Experience -->
+            <div class="bento-stat-card">
+              <div class="bento-stat-top">
+                <div class="bento-stat-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bento-stat-val-group">
+                <span class="bento-stat-big">7</span><span class="bento-stat-suffix">+</span>
+                <span class="bento-stat-unit">Years</span>
+              </div>
+              <div class="bento-stat-meta">
+                <div class="bento-stat-label">Industry Experience</div>
+                <div class="bento-stat-sub">Digital Transformation &amp; Analytics</div>
+              </div>
+            </div>
+
+            <!-- Tile 2: Higher Education & Teaching Experience -->
+            <div class="bento-stat-card">
+              <div class="bento-stat-top">
+                <div class="bento-stat-icon-wrap" style="background:rgba(16,185,129,0.12); color:#10b981; border-color:rgba(16,185,129,0.25);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 1-4 4v14a3 3 0 0 0 3-3h7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bento-stat-val-group">
+                <span class="bento-stat-big">2</span><span class="bento-stat-suffix">+</span>
+                <span class="bento-stat-unit">Years</span>
+              </div>
+              <div class="bento-stat-meta">
+                <div class="bento-stat-label">Teaching Experience</div>
+                <div class="bento-stat-sub">Higher Education &bull; PPIU &amp; UTE</div>
+              </div>
+            </div>
+
+            <!-- Tile 3: Advanced Degree -->
+            <div class="bento-stat-card">
+              <div class="bento-stat-top">
+                <div class="bento-stat-icon-wrap" style="background:rgba(56,189,248,0.12); color:#38bdf8; border-color:rgba(56,189,248,0.25);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                </div>
+              </div>
+              <div class="bento-stat-val-group">
+                <span class="bento-stat-big" style="font-size:1.75rem;">M.Sc.</span>
+                <span class="bento-stat-unit">AIT</span>
+              </div>
+              <div class="bento-stat-meta">
+                <div class="bento-stat-label">Data Science &amp; AI</div>
+                <div class="bento-stat-sub">Asian Institute of Technology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kampot Cement Tenure Companion Ribbon -->
+        <div class="company-tenure-banner">
+          <div style="display:flex; align-items:center; gap:0.85rem;">
+            <div class="tenure-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M3 21h18M3 7v14M21 7v14M6 11h2M6 15h2M11 11h2M11 15h2M16 11h2M16 15h2M9 3h6v4H9z" />
+              </svg>
+            </div>
+            <div>
+              <div class="tenure-banner-text">
+                <strong>Kampot Cement Co., Ltd.</strong> &mdash; Continuous Enterprise Tenure (2019 &ndash; Present)
+              </div>
+              <div style="font-size:0.82rem; color:var(--muted); margin-top:0.15rem;">
+                Phnom Penh, Cambodia &bull; 6+ Years Continuous Enterprise Core across Evolving Strategic Roles
+              </div>
+            </div>
+          </div>
+          <div class="tenure-banner-badge">
+            <span class="pulse-dot" style="background:#10b981; width:7px; height:7px; border-radius:50%; display:inline-block; box-shadow:0 0 8px #10b981;"></span>
+            <span>Enterprise Core</span>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Role 1: Senior Business Analyst (Kampot Cement) -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3 class="timeline-role-title">Senior Business Analyst</h3>
+              <span class="timeline-period-badge current">Present</span>
+            </div>
+            <div class="timeline-org">
+              <span>Kampot Cement Co., Ltd.</span>
+              <span>&bull;</span>
+              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led AI training sessions to improve adoption, developed materials, and delivered hands-on workshops
+                and tool demos following best practices.</li>
+              <li>Optimized the CRM value chain by enhancing customer management processes and integrating e-ordering
+                systems, improving operational efficiency.</li>
+              <li>Led Scrum and Agile workflows for the data management and digitalization team, streamlining processes
+                and enhancing collaboration.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2: Part-Time Lecturer (PPIU & UTE) -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3 class="timeline-role-title">Part-Time Lecturer</h3>
+              <span class="timeline-period-badge current">Present</span>
+            </div>
+            <div class="timeline-org">
+              <span>Phnom Penh International University (PPIU) &amp; UTE University of Technology and
+                Entrepreneurship</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Deliver courses in Business Intelligence, Digital Business, Data Management, Information Management
+                and IT related, integrating industry best practices and real-world applications into academic learning.
+              </li>
+              <li>Design course syllabi, assessments, and learning activities aligned with university academic standards
+                and learning outcomes.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3: O2O Platform Development (Kampot Cement) -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3 class="timeline-role-title">O2O Platform Development</h3>
+              <span class="timeline-period-badge">2021 &ndash; 2023</span>
+            </div>
+            <div class="timeline-org">
+              <span>Kampot Cement Co., Ltd.</span>
+              <span>&bull;</span>
+              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Acquired and onboarded offline partners, logistics providers, and service partners to enhance
+                offerings.</li>
+              <li>Oversaw the ecommerce website, ensuring accurate content, product listings, and pricing. Coordinated
+                brand, marketing, and e-commerce activities to drive engagement and sales.</li>
+              <li>Monitored business outcomes and performance through data-driven analysis.</li>
+            </ul>
+          </div>
+
+          <!-- Role 4: Digital Marketing Specialist (Kampot Cement) -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <h3 class="timeline-role-title">Digital Marketing Specialist</h3>
+              <span class="timeline-period-badge">2019 &ndash; 2021</span>
+            </div>
+            <div class="timeline-org">
+              <span>Kampot Cement Co., Ltd.</span>
+              <span>&bull;</span>
+              <span style="color:var(--muted); font-weight:500;">Phnom Penh, Cambodia</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led digital marketing efforts across platforms, ensuring cohesive execution while aligning strategies
+                with business objectives through executive collaboration.</li>
+              <li>Built an in-house team, reducing agency dependence and costs.</li>
+              <li>Developed strategies for social media, website management, and SEO/SEM.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Earlier Career Foundation -->
+        <div class="earlier-career-strip">
+          <div class="earlier-career-title">&#10022; Prior Technical &amp; Teaching Foundation</div>
+          <div class="earlier-career-list">
+            <div class="earlier-career-item">
+              <strong>IT Supervisor</strong> &bull; True Visions International School (2017&ndash;2018)<br>
+              <span style="color:var(--muted); font-size:0.8rem;">Managed school websites, systems, networks,
+                hardware/software and computer teaching.</span>
+            </div>
+            <div class="earlier-career-item">
+              <strong>English Teacher (Part-Time)</strong> &bull; Beltei International School Campus 5 (2018)
+            </div>
+            <div class="earlier-career-item">
+              <strong>Computer Teacher</strong> &bull; Learning International School (2016&ndash;2017)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       Skills & Education Section
+       ======================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-eyebrow">&#10022; Technical Proficiencies &amp; Academic Degrees</div>
+        <h2 class="section-title">Skills &amp; Education</h2>
+        <p class="section-desc">
+          Specialized capabilities across modern data stacks, agile management, and formal university degrees.
+        </p>
+
+        <div class="skills-edu-grid">
+          <!-- Technical Skill Sets -->
+          <div class="skills-group-container">
+            <div class="skill-category-card">
+              <div class="skill-cat-title">
+                <span>Data &amp; Analytics</span>
+              </div>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">Microsoft Excel (Advanced)</span>
+                <span class="skill-tag">Data Management</span>
+                <span class="skill-tag">Business Intelligence</span>
+                <span class="skill-tag">Generative AI Tools &amp; Copilot</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-cat-title">
+                <span>Programming &amp; Development</span>
+              </div>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Terminal / Shell</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-cat-title">
+                <span>Cloud &amp; Project Management</span>
+              </div>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">Scrum / Agile Workflows</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Microsoft 365</span>
+                <span class="skill-tag">CRM Systems &amp; e-Ordering</span>
+                <span class="skill-tag">E-Commerce Management</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="skill-cat-title">
+                <span>Design &amp; UI/UX</span>
+              </div>
+              <div class="skill-tag-cloud">
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Adobe Illustrator</span>
+                <span class="skill-tag">Adobe Photoshop</span>
+                <span class="skill-tag">Digital Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formal Education Degrees -->
+          <div class="edu-card-list">
+            <!-- 2024: M.Sc. Data Science & AI -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2024</div>
+              <h3 class="edu-degree-title">M.Sc. in Data Science and Artificial Intelligence</h3>
+              <div class="edu-institution">Asian Institute of Technology (AIT), Thailand</div>
+            </div>
+
+            <!-- 2017: B.Sc. IT -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2017</div>
+              <h3 class="edu-degree-title">B.Sc. in Information Technology</h3>
+              <div class="edu-institution">Build Bright University, Phnom Penh</div>
+            </div>
+
+            <!-- 2018: B.Ed. TEFL -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2018</div>
+              <h3 class="edu-degree-title">B.Ed. in Teaching English as a Foreign Language</h3>
+              <div class="edu-institution">Beltei International University, Phnom Penh</div>
+            </div>
+
+            <!-- 2013: High School -->
+            <div class="edu-card">
+              <div class="edu-year-badge">2013</div>
+              <h3 class="edu-degree-title">National High School Diploma</h3>
+              <div class="edu-institution">Sok An Prey Sandek High School, Takeo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       ACTUATED FIELDWORK & WORKSHOP GALLERY
+       (Photos from AI Adoption Development_Project & Random_Teaching)
+       ======================================================================== -->
+    <section id="fieldwork" style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="section-eyebrow">&#10022; Photographic Fieldwork &amp; Engagements</div>
+        <h2 class="section-title">Enterprise Training &amp; Academic Lectures</h2>
+        <p class="section-desc">
+          Photographic documentation across 4 core tracks: <strong>AI 101</strong> (Work Smarter with AI &amp; Interactive Prompt Clinic), <strong>AI 201</strong> (AI In Action: Productivity &amp; Real Business Cases), <strong>AI 201</strong> (Team Enablement AI Productivity Factory), and <strong>University Lecturing</strong> (Computer Science at PPIU; Digital Business &amp; Digital Media Design at UTE).
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="gallery-filter-bar">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">
+            <span>All Engagements</span>
+            <span class="gallery-filter-count">14</span>
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="ai-101">
+            <span>AI 101: Prompt Clinic</span>
+            <span class="gallery-filter-count">3</span>
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="ai-201-biz">
+            <span>AI 201: Productivity</span>
+            <span class="gallery-filter-count">3</span>
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="ai-201-mfg">
+            <span>AI 201: Manufacturing</span>
+            <span class="gallery-filter-count">3</span>
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="university">
+            <span>University Lecturing</span>
+            <span class="gallery-filter-count">5</span>
+          </button>
+        </div>
+
+        <!-- Photo Cards Grid with Actuated Overlay Motion -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <!-- ==========================================
+               Track 1: AI 101 — Work Smarter with AI & Interactive Prompt Clinic (3 items)
+               ========================================== -->
+
+          <!-- 1. AI 101: Work Smarter with AI — Kickoff -->
+          <div class="gallery-item" data-category="ai-101"
+            data-src="./AI Adoption Development_Project/AI101 (1).jpg"
+            data-title="AI 101: Work Smarter with AI — Kickoff"
+            data-desc="Foundational enterprise enablement and prompt clinic kickoff on 'Using AI to Improve Daily Work Productivity' with corporate cross-functional teams.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI101 (1).jpg" alt="AI 101: Work Smarter with AI — Kickoff"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 101: Work Smarter with AI — Kickoff</div>
+              <div class="gallery-sub">Work Smarter with AI &bull; Foundational Enterprise Productivity Enablement</div>
+            </div>
+          </div>
+
+          <!-- 2. AI 101: Work Smarter with AI & Interactive Prompt Clinic -->
+          <div class="gallery-item" data-category="ai-101"
+            data-src="./AI Adoption Development_Project/AI101 (2).jpg"
+            data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic"
+            data-desc="Interactive boardroom session on modern generative AI tooling, workplace readiness, and everyday prompt engineering techniques.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI101 (2).jpg" alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic</div>
+              <div class="gallery-sub">Interactive Prompt Clinic &bull; Boardroom AI Readiness &amp; Workflow Mastery</div>
+            </div>
+          </div>
+
+          <!-- 3. AI 101: Work Smarter with AI & Interactive Prompt Clinic — Online Webinar -->
+          <div class="gallery-item" data-category="ai-101"
+            data-src="./AI Adoption Development_Project/AI101 (3).jpg"
+            data-title="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar"
+            data-desc="Live interactive enterprise-wide webinar delivering generative AI adoption strategies and prompt engineering clinics to cross-departmental staff online.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI101 (3).jpg" alt="AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 101: Prompt Clinic</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 101: Work Smarter with AI &amp; Interactive Prompt Clinic: Online Webinar</div>
+              <div class="gallery-sub">Interactive Prompt Clinic &bull; Live Cross-Departmental Digital Enablement</div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               Track 2: AI 201 — AI In Action: Productivity & Real Business Cases (3 items)
+               ========================================== -->
+
+          <!-- 4. AI 201: Real Business Cases Lab -->
+          <div class="gallery-item" data-category="ai-201-biz"
+            data-src="./AI Adoption Development_Project/AI201 (1).JPG"
+            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+            data-desc="Hands-on collaborative problem-solving lab applying Copilot Chat to summarize operational issues, classify thematic patterns, and produce actionable business resolution plans.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201 (1).JPG" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Productivity</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+              <div class="gallery-sub">Real Business Cases Lab &bull; Copilot Problem-Solving &amp; Root-Cause Analysis</div>
+            </div>
+          </div>
+
+          <!-- 5. AI 201: Team Enablement Celebration -->
+          <div class="gallery-item" data-category="ai-201-biz"
+            data-src="./AI Adoption Development_Project/AI201 (2).JPG"
+            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+            data-desc="Cross-functional team celebrating successful completion of intermediate enterprise AI productivity routines and business workflow automation.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201 (2).JPG" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Productivity</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+              <div class="gallery-sub">Team Enablement Celebration &bull; Multi-Department Workflow Execution &amp; Alignment</div>
+            </div>
+          </div>
+
+          <!-- 6. AI 201: Productivity Masterclass -->
+          <div class="gallery-item" data-category="ai-201-biz"
+            data-src="./AI Adoption Development_Project/AI201 (3).jpg"
+            data-title="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+            data-desc="Enterprise masterclass cohort concluding applied generative AI training on advanced prompt chains, digital workflow integration, and cross-team productivity.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201 (3).jpg" alt="AI 201: AI In Action — Productivity &amp; Real Business Cases"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Productivity</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: AI In Action — Productivity &amp; Real Business Cases</div>
+              <div class="gallery-sub">Productivity Masterclass &bull; Intermediate AI Tools &amp; Daily Business Productivity</div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               Track 3: AI 201 — Enablement AI In Action for Manufacturing (3 items)
+               ========================================== -->
+
+          <!-- 7. AI 201: Factory Cohort Showcase -->
+          <div class="gallery-item" data-category="ai-201-mfg"
+            data-src="./AI Adoption Development_Project/AI201_Factory (1).jpg"
+            data-title="AI 201: Team Enablement AI Productivity Factory"
+            data-desc="Plant engineering and manufacturing operations teams gathered on the main auditorium stage following practical AI productivity enablement.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201_Factory (1).jpg" alt="AI 201: Team Enablement AI Productivity Factory"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+              <div class="gallery-sub">Factory Cohort Showcase &bull; Plant Operations &amp; Engineering Teams</div>
+            </div>
+          </div>
+
+          <!-- 8. AI 201: Live Auditorium Enablement -->
+          <div class="gallery-item" data-category="ai-201-mfg"
+            data-src="./AI Adoption Development_Project/AI201_Factory (2).JPG"
+            data-title="AI 201: Team Enablement AI Productivity Factory"
+            data-desc="Direct stage-to-hall facilitation delivering practical AI workflows, operational problem framing, and productivity routines to plant personnel.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201_Factory (2).JPG" alt="AI 201: Team Enablement AI Productivity Factory"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+              <div class="gallery-sub">Live Auditorium Enablement &bull; Real-Time Plant Workflow Coaching</div>
+            </div>
+          </div>
+
+          <!-- 9. AI 201: Copilot Studio & Agent Builder -->
+          <div class="gallery-item" data-category="ai-201-mfg"
+            data-src="./AI Adoption Development_Project/AI201_Factory (3).jpg"
+            data-title="AI 201: Team Enablement AI Productivity Factory"
+            data-desc="Live deep-dive on custom Copilot Studio agent architecture, system prompts, knowledge grounding, and low-code automations for industrial workflows.">
+            <div class="gallery-thumb-wrap">
+              <img src="./AI Adoption Development_Project/AI201_Factory (3).jpg" alt="AI 201: Team Enablement AI Productivity Factory"
+                class="gallery-thumb" loading="lazy" />
+              <span class="gallery-overlay-badge">AI 201: Manufacturing</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">AI 201: Team Enablement AI Productivity Factory</div>
+              <div class="gallery-sub">Copilot Studio &amp; Agent Builder &bull; Custom Agents &amp; Industrial Knowledge Grounding</div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               Track 4: University Lecturing — PPIU & UTE (5 items)
+               ========================================== -->
+
+          <!-- 10. PPIU: Computer Science Practical Lab -->
+          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU.jpg"
+            data-title="Phnom Penh International University (PPIU)"
+            data-desc="Undergraduate practical computing lab instruction and hands-on programming mentoring for Computer Science students at Phnom Penh International University (PPIU) Campus.">
+            <div class="gallery-thumb-wrap">
+              <img src="./Random_Teaching/PPIU.jpg" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
+                loading="lazy" />
+              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Practical Computing Laboratory Session</div>
+            </div>
+          </div>
+
+          <!-- 11. PPIU: Computer Science Lecture Hall Session -->
+          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPIU01.JPG"
+            data-title="Phnom Penh International University (PPIU)"
+            data-desc="Academic lecture hall instruction and cohort curriculum delivery for Computer Science students at Phnom Penh International University (PPIU) Campus.">
+            <div class="gallery-thumb-wrap">
+              <img src="./Random_Teaching/PPIU01.JPG" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
+                loading="lazy" />
+              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Lecture Hall Session &amp; Student Cohort</div>
+            </div>
+          </div>
+
+          <!-- 12. PPIU: Computer Science Cohort Mentorship -->
+          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/PPUI02.jpg"
+            data-title="Phnom Penh International University (PPIU)"
+            data-desc="Student academic cohort mentorship, project guidance, and interactive community engagement with Computer Science undergraduates at Phnom Penh International University (PPIU) Campus.">
+            <div class="gallery-thumb-wrap">
+              <img src="./Random_Teaching/PPUI02.jpg" alt="Phnom Penh International University (PPIU)" class="gallery-thumb"
+                loading="lazy" />
+              <span class="gallery-overlay-badge">PPIU: Computer Science</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">Phnom Penh International University (PPIU)</div>
+              <div class="gallery-sub">PPIU Campus &bull; Computer Science &bull; Academic Cohort Mentorship &amp; Guidance</div>
+            </div>
+          </div>
+
+          <!-- 13. UTE: Digital Business Cohort -->
+          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE01.jpg"
+            data-title="University of Technology and Entrepreneurship (UTE)"
+            data-desc="Academic instruction, digital enterprise modeling, and cohort seminar for Digital Business students at University of Technology and Entrepreneurship (UTE) Campus.">
+            <div class="gallery-thumb-wrap">
+              <img src="./Random_Teaching/UTE01.jpg" alt="University of Technology and Entrepreneurship (UTE)" class="gallery-thumb"
+                loading="lazy" />
+              <span class="gallery-overlay-badge">UTE: Digital Business</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
+              <div class="gallery-sub">UTE Campus &bull; Digital Business &bull; Academic Lecturing &amp; University Cohort</div>
+            </div>
+          </div>
+
+          <!-- 14. UTE: Digital Media Design Classroom -->
+          <div class="gallery-item" data-category="university" data-src="./Random_Teaching/UTE.jpg"
+            data-title="University of Technology and Entrepreneurship (UTE)"
+            data-desc="Classroom mentorship, design thinking, and digital media development guidance for Digital Media Design students at University of Technology and Entrepreneurship (UTE) Campus.">
+            <div class="gallery-thumb-wrap">
+              <img src="./Random_Teaching/UTE.jpg" alt="University of Technology and Entrepreneurship (UTE)" class="gallery-thumb"
+                loading="lazy" />
+              <span class="gallery-overlay-badge">UTE: Digital Media Design</span>
+              <span class="gallery-preview-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="12" height="12">
+                  <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                </svg>
+                <span>Enlarge</span>
+              </span>
+            </div>
+            <div class="gallery-info">
+              <div class="gallery-title">University of Technology and Entrepreneurship (UTE)</div>
+              <div class="gallery-sub">UTE Campus &bull; Digital Media Design &bull; Classroom Mentorship &amp; Student Guidance</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       Certifications & Training (From Latest Resume)
+       ======================================================================== -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-eyebrow">&#10022; Credentials &amp; Recognition</div>
+        <h2 class="section-title">Certifications &amp; Training</h2>
+        <p class="section-desc">
+          Professional accreditations and competitive awards documented in the verified resume.
+        </p>
+
+        <div class="certs-grid">
+          <!-- University Teaching: The University of Hong Kong -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">The University of Hong Kong &bull; Coursera</div>
+              <div class="cert-name">University Teaching</div>
+            </div>
+            <div class="cert-id-badge">Credential: f81ba2f6c297eb22526a437db6f7e2a1</div>
+          </div>
+
+          <!-- Advertising with Meta -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Meta &bull; Coursera</div>
+              <div class="cert-name">Advertising with Meta</div>
+            </div>
+            <div class="cert-id-badge">Credential: e9ffa974911db5751010036d4b8fe525</div>
+          </div>
+
+          <!-- Agile Project Management -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Coursera</div>
+              <div class="cert-name">Agile Project Management</div>
+            </div>
+            <div class="cert-id-badge">Credential: S6468M8CY0Q6</div>
+          </div>
+
+          <!-- HubSpot Digital Marketing -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">HubSpot Academy</div>
+              <div class="cert-name">Digital Marketing Certified</div>
+            </div>
+            <div class="cert-id-badge">Credential: 0def4936721946829275e818d2dfc47b</div>
+          </div>
+
+          <!-- HubSpot Social Media -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">HubSpot Academy</div>
+              <div class="cert-name">Social Media Certified</div>
+            </div>
+            <div class="cert-id-badge">Credential: 2fa4daf0ba8843c6be5fd9ab918d2ad6</div>
+          </div>
+
+          <!-- HubSpot SEO -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">HubSpot Academy</div>
+              <div class="cert-name">SEO Certified</div>
+            </div>
+            <div class="cert-id-badge">Credential: 7c23560031844054941ed994a10e7714</div>
+          </div>
+
+          <!-- BMC Cambodia Award -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Competition Award (2023)</div>
+              <div class="cert-name">Top 20 Business Model Competition (BMC) Cambodia</div>
+            </div>
+            <div class="cert-id-badge">National Business Competition Cambodia</div>
+          </div>
+
+          <!-- AIT Hackathon Award -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">AIT Entrepreneurship Center (2023)</div>
+              <div class="cert-name">Awards Based on Popularity</div>
+            </div>
+            <div class="cert-id-badge">4th Sustainability Hackathon</div>
+          </div>
+
+          <!-- Employee of the Month -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-issuer">Corporate Recognition (2021)</div>
+              <div class="cert-name">Employee of the Month</div>
+            </div>
+            <div class="cert-id-badge">Entrepreneurship &amp; Collaboration &bull; Kampot Cement / SCG</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       Contact Section — Redesigned Executive Channels Hub
+       ======================================================================== -->
+    <section id="contact" style="background:var(--bg-alt); padding: clamp(4rem, 8vw, 6.5rem) 0; scroll-margin-top: 100px;">
+      <div class="container">
+        <div class="contact-section-wrap">
+
+          <!-- Header Block -->
+          <div class="contact-header-block">
+            <div class="contact-status-chip">
+              <span class="status-pulse-dot"></span>
+              <span>Open for Advisory, AI Transformation &amp; Academic Lecturing</span>
+            </div>
+            <h2 class="contact-title">
+              Let's Build Something <span class="contact-title-accent">Exceptional</span>
+            </h2>
+            <p class="contact-lead">
+              <span class="contact-lead-line">Based in <strong>Phnom Penh, Cambodia</strong>. Actively partnering on enterprise business analysis,</span>
+              <span class="contact-lead-line">generative AI workflow transformation, and university lecturing at PPIU &amp; UTE.</span>
+            </p>
+          </div>
+
+          <!-- 3-Channel Bento Cards Grid -->
+          <div class="contact-channels-grid">
+
+            <!-- Card 1: Direct Email -->
+            <div class="contact-channel-card">
+              <div class="channel-card-top">
+                <div class="channel-icon-box email-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="30" height="30">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+              </div>
+              <div class="channel-name">Executive Email</div>
+              <div class="channel-handle">sornrambo@gmail.com</div>
+              <p class="channel-desc">
+                Ideal for detailed enterprise proposals, formal consultation briefs, RFPs, and academic syllabus collaboration.
+              </p>
+              <div class="channel-actions">
+                <a href="mailto:sornrambo@gmail.com" class="channel-action-btn btn-main">
+                  <span>Send Email</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+                <button type="button" class="channel-action-btn btn-copy copy-email-btn" data-copy="sornrambo@gmail.com" title="Copy email address" aria-label="Copy email address">
+                  <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                  </svg>
+                  <span class="copy-label">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2: LinkedIn -->
+            <div class="contact-channel-card">
+              <div class="channel-card-top">
+                <div class="channel-icon-box linkedin-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="channel-name">LinkedIn Connection</div>
+              <div class="channel-handle">linkedin.com/in/rambosorn</div>
+              <p class="channel-desc">
+                Verified enterprise career history, project milestones, peer recommendations, and business intelligence updates.
+              </p>
+              <div class="channel-actions">
+                <a href="https://www.linkedin.com/in/rambosorn/" target="_blank" rel="noopener noreferrer" class="channel-action-btn btn-main">
+                  <span>Connect on LinkedIn</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Telegram -->
+            <div class="contact-channel-card">
+              <div class="channel-card-top">
+                <div class="channel-icon-box telegram-box">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06-.01.18-.02.26z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="channel-name">Telegram Direct</div>
+              <div class="channel-handle">@rambosorn</div>
+              <p class="channel-desc">
+                Direct channel for real-time agenda alignments, fast scheduling check-ins, and direct message exchanges.
+              </p>
+              <div class="channel-actions">
+                <a href="https://t.me/rambosorn" target="_blank" rel="noopener noreferrer" class="channel-action-btn btn-main">
+                  <span>Chat @rambosorn</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Clean Footer -->
+        <footer class="site-footer">
+          <div>&copy; 2026 Sorn Rambo. All rights reserved.</div>
+          <div>Phnom Penh, Cambodia &bull; Kampot Cement Co., Ltd. (2019&ndash;Present) &bull; Lecturer @ PPIU &amp; UTE</div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       CENTERED FLOATING SCROLL NOTIFICATION ACTION ("notif-link w-inline-block")
+       (Appears when scrolling to "Professional Experience")
+       ======================================================================== -->
+    <div class="scroll-notif-wrapper" id="scrollNotifWrapper" aria-hidden="true">
+      <a href="#contact" class="notif-link w-inline-block" id="scrollNotifLink"
+        aria-label="Book a free discovery call with Sorn Rambo">
+        <div class="notif-pill-inner">
+          <span class="notif-left-label">Book a free discovery call</span>
+          <div class="notif-cta-btn">
+            <span class="notif-cta-text">BOOK A CALL</span>
+            <div class="notif-avatar-cluster" aria-hidden="true">
+              <div class="notif-avatar-circle">
+                <img src="./1.png" alt="Sorn Rambo" class="notif-avatar-pic" />
+              </div>
+              <div class="notif-avatar-crescent"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- ========================================================================
+       High-Res Lightbox Modal
+       ======================================================================== -->
+    <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+      <div class="lightbox-content">
+        <img src="" alt="Enlarged visual evidence" class="lightbox-img" id="lightbox-img" />
+        <div class="lightbox-caption-bar">
+          <div>
+            <div class="lightbox-caption-title" id="lightbox-title"></div>
+            <div class="lightbox-caption-sub" id="lightbox-desc"></div>
+          </div>
+          <button type="button" class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close image preview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+
+      // Night Mode / Theme Management
+      function initThemeEvents() {
+        const toggleButtons = document.querySelectorAll('.theme-toggle-btn');
+        toggleButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('rambo_theme', next);
+          });
+        });
+      }
+      initThemeEvents();
+
+      // 1. Live Clock for Phnom Penh (UTC+7)
+      function updateClock() {
+        const el = document.getElementById('live-time-text');
+        if (!el) return;
+        const now = new Date();
+        let hours = now.getHours();
+        const mins = String(now.getMinutes()).padStart(2, '0');
+        const ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12 || 12;
+        el.textContent = hours + ':' + mins + ampm;
+      }
+      updateClock();
+      setInterval(updateClock, 1000);
+
+      // 2. Mobile Drawer Controls
+      const drawer = document.getElementById('mobile-drawer');
+      const drawerOpenBtn = document.getElementById('drawer-open-btn');
+      const drawerCloseBtn = document.getElementById('drawer-close-btn');
+
+      if (drawerOpenBtn) {
+        drawerOpenBtn.addEventListener('click', () => {
+          drawer.classList.add('is-open');
+          drawer.setAttribute('aria-hidden', 'false');
+        });
+      }
+
+      function closeDrawer() {
+        if (drawer) {
+          drawer.classList.remove('is-open');
+          drawer.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+      if (drawer) {
+        drawer.addEventListener('click', (e) => {
+          if (e.target === drawer) closeDrawer();
+        });
+      }
+
+      document.querySelectorAll('.drawer-nav-item').forEach(item => {
+        item.addEventListener('click', closeDrawer);
+      });
+
+      // 3. Dynamic Motion Avatar: Mouse Overlay Tech Style, 3D Tilt, Glare & Mode Switch
+      const avatarCard = document.getElementById('avatarCard');
+      const avatarGlare = document.getElementById('avatarGlare');
+      const modeExecBtn = document.getElementById('modeExecutiveBtn');
+      const modeAugBtn = document.getElementById('modeAugmentedBtn');
+      const orbitChipSub = document.getElementById('orbitChipSub');
+      const orbitChipTag = document.getElementById('orbitChipTag');
+      const modeBadgeLiveText = document.getElementById('modeBadgeLiveText');
+
+      if (avatarCard) {
+        let isHovering = false;
+        let targetRotX = 0;
+        let targetRotY = 0;
+        let currentRotX = 0;
+        let currentRotY = 0;
+        let manualMode = 'exec'; // 'exec' or 'augmented'
+
+        function updateCardTilt() {
+          if (isHovering) {
+            currentRotX += (targetRotX - currentRotX) * 0.15;
+            currentRotY += (targetRotY - currentRotY) * 0.15;
+            avatarCard.style.transform = "perspective(1000px) rotateX(" + currentRotX.toFixed(2) + "deg) rotateY(" + currentRotY.toFixed(2) + "deg) scale3d(1.025, 1.025, 1.025)";
+            requestAnimationFrame(updateCardTilt);
+          }
+        }
+
+        // Mouse Overlay triggers Tech Mode Transition
+        avatarCard.addEventListener('mouseenter', () => {
+          isHovering = true;
+          avatarCard.style.animation = 'none'; // pause idle float on hover
+
+          // Switch buttons & labels to AI Tech
+          if (modeAugBtn && modeExecBtn) {
+            modeAugBtn.classList.add('active');
+            modeExecBtn.classList.remove('active');
+          }
+          if (orbitChipSub) orbitChipSub.textContent = 'AI & Data Specialist';
+          if (orbitChipTag) orbitChipTag.textContent = 'AI TECH ACTIVE';
+          if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'AI Tech Active';
+
+          requestAnimationFrame(updateCardTilt);
+        });
+
+        avatarCard.addEventListener('mousemove', (e) => {
+          const rect = avatarCard.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+
+          targetRotY = ((x - centerX) / centerX) * 12; // tilt left/right
+          targetRotX = -((y - centerY) / centerY) * 12; // tilt up/down
+
+          // Position glare
+          const percentX = (x / rect.width) * 100;
+          const percentY = (y / rect.height) * 100;
+          if (avatarGlare) {
+            avatarGlare.style.setProperty('--mouse-x', percentX + '%');
+            avatarGlare.style.setProperty('--mouse-y', percentY + '%');
+          }
+        });
+
+        avatarCard.addEventListener('mouseleave', () => {
+          isHovering = false;
+          targetRotX = 0;
+          targetRotY = 0;
+          avatarCard.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+          avatarCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+
+          // Revert to manual mode state on mouseleave
+          if (manualMode === 'exec') {
+            if (modeExecBtn && modeAugBtn) {
+              modeExecBtn.classList.add('active');
+              modeAugBtn.classList.remove('active');
+            }
+            if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
+            if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
+            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Hover for Tech';
+          }
+
+          setTimeout(() => {
+            avatarCard.style.transition = '';
+            avatarCard.style.animation = 'avatarHoverFloat 5.5s ease-in-out infinite alternate';
+          }, 600);
+        });
+
+        // Manual Mode Switcher Controls
+        if (modeExecBtn && modeAugBtn) {
+          modeExecBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            manualMode = 'exec';
+            modeExecBtn.classList.add('active');
+            modeAugBtn.classList.remove('active');
+            avatarCard.classList.remove('mode-augmented');
+            if (orbitChipSub) orbitChipSub.textContent = 'Kampot Cement Co., Ltd.';
+            if (orbitChipTag) orbitChipTag.innerHTML = '2019&ndash;Present';
+            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'Executive Active';
+          });
+
+          modeAugBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            manualMode = 'augmented';
+            modeAugBtn.classList.add('active');
+            modeExecBtn.classList.remove('active');
+            avatarCard.classList.add('mode-augmented');
+            if (orbitChipSub) orbitChipSub.textContent = 'AI & Data Specialist';
+            if (orbitChipTag) orbitChipTag.textContent = 'AI TECH ACTIVE';
+            if (modeBadgeLiveText) modeBadgeLiveText.textContent = 'AI Tech Active';
+          });
+        }
+      }
+
+      // 4. Centered Floating Notification: Appears when scrolling to "Professional Experience"
+      const scrollNotifWrapper = document.getElementById('scrollNotifWrapper');
+      const expSection = document.getElementById('experience');
+      const contactSection = document.getElementById('contact');
+
+      function handleScrollNotification() {
+        if (!expSection || !scrollNotifWrapper) return;
+        const expRect = expSection.getBoundingClientRect();
+        const contactRect = contactSection ? contactSection.getBoundingClientRect() : null;
+
+        // Appears when user scrolls into the "Professional Experience" section
+        const isAtExperience = expRect.top <= (window.innerHeight * 0.7);
+        // Hides if user reaches the contact section so it doesn't overlap contact channels
+        const isPastContact = contactRect && (contactRect.top <= (window.innerHeight * 0.4));
+
+        if (isAtExperience && !isPastContact) {
+          scrollNotifWrapper.classList.add('is-visible');
+          scrollNotifWrapper.setAttribute('aria-hidden', 'false');
+        } else {
+          scrollNotifWrapper.classList.remove('is-visible');
+          scrollNotifWrapper.setAttribute('aria-hidden', 'true');
+        }
+      }
+
+      window.addEventListener('scroll', handleScrollNotification, { passive: true });
+      handleScrollNotification();
+
+      // 5. Gallery Category Filter Tabs
+      const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 6. High-Resolution Lightbox Modal
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDesc = document.getElementById('lightbox-desc');
+      const lightboxClose = document.getElementById('lightbox-close-btn');
+
+      function openLightbox(item) {
+        const src = item.getAttribute('data-src');
+        const title = item.getAttribute('data-title');
+        const desc = item.getAttribute('data-desc');
+
+        if (lightboxImg) lightboxImg.src = src;
+        if (lightboxTitle) lightboxTitle.innerHTML = title;
+        if (lightboxDesc) lightboxDesc.textContent = desc;
+
+        if (lightboxModal) {
+          lightboxModal.classList.add('is-open');
+          lightboxModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          openLightbox(item);
+        });
+
+        const pill = item.querySelector('.gallery-preview-pill');
+        if (pill) {
+          pill.setAttribute('role', 'button');
+          pill.setAttribute('aria-label', 'Enlarge ' + (item.getAttribute('data-title') || 'image'));
+          pill.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openLightbox(item);
+          });
+        }
+      });
+
+      function closeLightbox() {
+        if (lightboxModal) {
+          lightboxModal.classList.remove('is-open');
+          lightboxModal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      }
+
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      if (lightboxModal) {
+        lightboxModal.addEventListener('click', (e) => {
+          if (e.target === lightboxModal) closeLightbox();
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeLightbox();
+          closeDrawer();
+        }
+      });
+
+      // 7. Contact Section Email Copy Button
+      const copyButtons = document.querySelectorAll('.copy-email-btn');
+      copyButtons.forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const textToCopy = btn.getAttribute('data-copy') || 'sornrambo@gmail.com';
+          const label = btn.querySelector('.copy-label');
+          try {
+            await navigator.clipboard.writeText(textToCopy);
+            btn.classList.add('is-copied');
+            if (label) label.textContent = 'Copied!';
+            setTimeout(() => {
+              btn.classList.remove('is-copied');
+              if (label) label.textContent = 'Copy';
+            }, 2000);
+          } catch (err) {
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            btn.classList.add('is-copied');
+            if (label) label.textContent = 'Copied!';
+            setTimeout(() => {
+              btn.classList.remove('is-copied');
+              if (label) label.textContent = 'Copy';
+            }, 2000);
+          }
+        });
+      });
+    </script>
+</body>
+
+</html>
