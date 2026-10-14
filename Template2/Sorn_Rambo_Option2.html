@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +41,22 @@
   <meta name="geo.region" content="KH-12" />
   <meta name="geo.placename" content="Phnom Penh" />
   <meta name="theme-color" content="#08080a" />
+
+  <!-- Theme Initialization (Prevents Flash) -->
+  <script>
+    (function () {
+      const saved = localStorage.getItem('rambo_theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        if (metaTheme) metaTheme.setAttribute('content', '#f7f6f2');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        if (metaTheme) metaTheme.setAttribute('content', '#08080a');
+      }
+    })();
+  </script>
 
   <!-- JSON-LD Structured Data (Google ProfilePage, WebSite & Verified Person Entity) -->
   <script type="application/ld+json">
@@ -115,18 +131,19 @@
         ],
         "worksFor": {
           "@type": "Organization",
-          "name": "Kampot Cement Co., Ltd.",
-          "url": "https://rambosorn.com/"
+          "name": "Kampot Cement Co., Ltd."
         },
         "alumniOf": [
           {
             "@type": "CollegeOrUniversity",
             "name": "Asian Institute of Technology (AIT)",
+            "url": "https://ait.ac.th/",
             "location": "Thailand"
           },
           {
             "@type": "CollegeOrUniversity",
             "name": "Phnom Penh International University (PPIU)",
+            "url": "https://ppiu.edu.kh/",
             "location": "Phnom Penh, Cambodia"
           }
         ],
@@ -218,6 +235,7 @@
     }
 
     :root, [data-theme="dark"] {
+      color-scheme: dark;
       --background: #08080a;
       --foreground: #f3f1ea;
       --surface: #111114;
@@ -249,6 +267,7 @@
     }
 
     [data-theme="light"] {
+      color-scheme: light;
       --background: #f7f6f2;
       --foreground: #101114;
       --surface: #ffffff;
@@ -2776,6 +2795,9 @@
           alt="Portrait of Rambo Sorn, Senior Business Analyst &amp; Educator"
           class="hero-portrait-img base-layer"
           id="hero-portrait-base"
+          width="1000"
+          height="1250"
+          fetchpriority="high"
         />
 
         <!-- Reveal Layer: Cyber Persona (Pixel-perfect registration with Base) -->
@@ -2785,6 +2807,8 @@
             alt="Cybernetic Persona Overlay"
             class="hero-portrait-img reveal-layer"
             id="hero-portrait-reveal"
+            width="1000"
+            height="1250"
           />
         </div>
 
@@ -4098,9 +4122,17 @@
       localStorage.setItem("rambo_theme", theme);
 
       const isLight = theme === "light";
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+      if (metaTheme) {
+        metaTheme.setAttribute('content', isLight ? '#f7f6f2' : '#08080a');
+      }
       if (themeToggleBtn) {
         themeToggleBtn.setAttribute("title", isLight ? "Switch to Dark Mode" : "Switch to Light Mode");
         themeToggleBtn.setAttribute("aria-label", isLight ? "Switch to Dark Mode" : "Switch to Light Mode");
+      }
+      if (mobileThemeBtn) {
+        mobileThemeBtn.setAttribute("title", isLight ? "Switch to Dark Mode" : "Switch to Light Mode");
+        mobileThemeBtn.setAttribute("aria-label", isLight ? "Switch to Dark Mode" : "Switch to Light Mode");
       }
     }
 
